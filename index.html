@@ -10,37 +10,92 @@
 
 <body>
     <div class="navbar">
-        <a href="index.html">Home</a>
+        <a href="index.html"><img src="img/logo.png" width="180" height="50"></a>
         <a href="serie.html">Serie TV</a>
         <a href="film.html">Film</a>
         <a href="anime.html">Anime</a>
         <a href="band.html">Band</a>
     </div>
-    <header>
-        <h1>Cinema Baldini</h1>
-        <p>Esplora il nuovo portale per film, serie tv, band e Anime</p>
-    </header>
-    <div class="contenitori">
-        <div class="serie">
-            <h2><a href="serie.html">Serie TV</a></h2>
-            <p><a href="serie.html">Esplora le migliori serie televisive.</a></p>
+    <div class="carousel-container">
+        <div class="carousel-slide active"
+            style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero_film.png');">
+            <div class="slide-content">
+                <h1>Film</h1>
+                <p>Scopri i capolavori del grande schermo.</p>
+                <a href="film.html" class="carousel-btn">Esplora Film</a>
+            </div>
         </div>
-        <div class="film">
-            <h2><a href="film.html">Film</a></h2>
-            <p><a href="film.html">Esplora i migliori film.</a></p>
+        <div class="carousel-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero_serie.png');">
+            <div class="slide-content">
+                <h1>Serie TV</h1>
+                <p>Le migliori storie, un episodio dopo l'altro.</p>
+                <a href="serie.html" class="carousel-btn">Esplora Serie</a>
+            </div>
         </div>
-        <div class="anime">
-            <h2><a href="anime.html">Anime</a></h2>
-            <p><a href="anime.html">Esplora i migliori anime.</a></p>
+        <div class="carousel-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero_anime.png');">
+            <div class="slide-content">
+                <h1>Anime</h1>
+                <p>L'animazione giapponese ai suoi massimi livelli.</p>
+                <a href="anime.html" class="carousel-btn">Esplora Anime</a>
+            </div>
         </div>
-        <div class="band">
-            <h2><a href="band.html">Band</a></h2>
-            <p><a href="band.html">Esplora le migliori band</a></p>
+        <div class="carousel-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero_band.png');">
+            <div class="slide-content">
+                <h1>Band</h1>
+                <p>Il ritmo e l'energia dei gruppi più iconici.</p>
+                <a href="band.html" class="carousel-btn">Esplora Band</a>
+            </div>
+        </div>
+
+        <button class="carousel-prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="carousel-next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
+
     <footer>
         <p>Tutti i diritti riservati Paolo Baldini 2026</p>
     </footer>
+
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            if (index >= slides.length) currentSlideIndex = 0;
+            if (index < 0) currentSlideIndex = slides.length - 1;
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[currentSlideIndex].classList.add('active');
+            dots[currentSlideIndex].classList.add('active');
+        }
+
+        function changeSlide(step) {
+            currentSlideIndex += step;
+            showSlide(currentSlideIndex);
+        }
+
+        function currentSlide(index) {
+            currentSlideIndex = index;
+            showSlide(currentSlideIndex);
+        }
+
+        // Auto-slide every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+    </script>
 
 </body>
 

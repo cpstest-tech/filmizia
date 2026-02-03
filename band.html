@@ -10,21 +10,25 @@
 
 <body>
     <div class="navbar">
-        <a href="index.html">Home</a>
+        <a href="index.html"><img src="img/logo.png" width="180" height="50"></a>
         <a href="serie.html">Serie TV</a>
         <a href="film.html">Film</a>
         <a href="anime.html">Anime</a>
         <a href="band.html">Band</a>
     </div>
-    <header>
+    <header class="header-band">
         <h1>Band</h1>
         <p>Esplora le migliori band del momento.</p>
     </header>
     <div class="contenitori">
         <div class="item">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum lorem ismu kfnle</p>
-            <button class="dettagli-btn">Dettagli</button>
+            <img src="img/hero_film.png" alt="Band Poster">
+            <div class="item-overlay">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum lorem ismu kfnle</p>
+                <button class="dettagli-btn"
+                    onclick="document.getElementById('dettagli-modal').style.display = 'flex';">Dettagli</button>
+            </div>
         </div>
     </div>
     <div id="dettagli-modal" class="modal-overlay" style="display: none;"
