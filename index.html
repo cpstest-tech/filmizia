@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/home.js"></script>
 </head>
 
 <body>
@@ -65,37 +66,24 @@
         <p>Tutti i diritti riservati Paolo Baldini 2026</p>
     </footer>
 
-    <script>
-        let currentSlideIndex = 0;
-        const slides = document.querySelectorAll('.carousel-slide');
-        const dots = document.querySelectorAll('.dot');
+    <div class="search-bar" style="margin-top: 20px;">
+        <input type="text" id="search-input" placeholder="Cerca in tutto il catalogo...">
+        <button onclick="cercaGlobale()">Cerca</button>
+    </div>
 
-        function showSlide(index) {
-            if (index >= slides.length) currentSlideIndex = 0;
-            if (index < 0) currentSlideIndex = slides.length - 1;
+    <div class="contenitori">
+    </div>
 
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-
-            slides[currentSlideIndex].classList.add('active');
-            dots[currentSlideIndex].classList.add('active');
-        }
-
-        function changeSlide(step) {
-            currentSlideIndex += step;
-            showSlide(currentSlideIndex);
-        }
-
-        function currentSlide(index) {
-            currentSlideIndex = index;
-            showSlide(currentSlideIndex);
-        }
-
-        // Auto-slide every 5 seconds
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000);
-    </script>
+    <div id="dettagli-modal" class="modal-overlay" style="display: none;"
+        onclick="document.getElementById('dettagli-modal').style.display = 'none';">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn"
+                onclick="document.getElementById('dettagli-modal').style.display = 'none';">×</button>
+            <h2>Dettagli</h2>
+            <div class="modal-info">
+            </div>
+        </div>
+    </div>
 
 </body>
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/anime.js"></script>
 </head>
 
 <body>
@@ -20,16 +21,11 @@
         <h1>Anime</h1>
         <p>Esplora i migliori anime del momento.</p>
     </header>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Cerca anime...">
+        <button onclick="cercaAnime()">Cerca</button>
+    </div>
     <div class="contenitori">
-        <div class="item">
-            <img src="img/hero_film.png" alt="Anime Poster">
-            <div class="item-overlay">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum lorem ismu kfnle</p>
-                <button class="dettagli-btn"
-                    onclick="document.getElementById('dettagli-modal').style.display = 'flex';">Dettagli</button>
-            </div>
-        </div>
     </div>
     <div id="dettagli-modal" class="modal-overlay" style="display: none;"
         onclick="document.getElementById('dettagli-modal').style.display = 'none';">
