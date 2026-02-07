@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: #333;
     overflow-x: hidden;
     background-color: black;
@@ -297,7 +299,7 @@ body {
 .slide-content h1 {
     font-size: 4rem;
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .slide-content p {
@@ -411,6 +413,27 @@ header {
     min-height: 300px;
     position: relative;
     overflow: hidden;
+}
+
+
+header h1 {
+    font-size: 5rem;
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #ff5900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #eee;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 header::before {
@@ -533,4 +556,363 @@ header * {
 .item .dettagli-btn:hover {
     background-color: white;
     color: #ff5900;
+}
+
+/* --- CYBER-PREMIUM UPLOAD THEME --- */
+
+.upload-page {
+    background: radial-gradient(circle at top right, #1a0a00, #000) !important;
+}
+
+.premium-form {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 60px;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 2px solid #ff5900 !important;
+    border-radius: 40px;
+    box-shadow: 0 0 50px rgba(255, 89, 0, 0.2), inset 0 0 20px rgba(255, 89, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.type-selector-wrapper {
+    margin-bottom: 50px;
+    background: rgba(255, 89, 0, 0.05);
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px dashed rgba(255, 89, 0, 0.4);
+    text-align: center;
+}
+
+.premium-select {
+    width: 80%;
+    padding: 15px 25px;
+    background: #000;
+    border: 2px solid #ff5900;
+    color: #ff5900;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.premium-select:hover {
+    background: #ff5900;
+    color: #000;
+}
+
+.upload-form .form-group label {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ff5900;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.upload-form input,
+.upload-form textarea {
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 18px;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.upload-form input:focus,
+.upload-form textarea:focus {
+    border-color: #ff5900;
+    box-shadow: 0 0 20px rgba(255, 89, 0, 0.3);
+    outline: none;
+}
+
+.upload-btn {
+    width: 100%;
+    padding: 25px;
+    background: #ff5900;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.upload-btn:hover {
+    background: #fff;
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(255, 89, 0, 0.5);
+}
+
+.feedback {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: 700;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.feedback.info {
+    background: #1a1a00;
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+.feedback.success {
+    background: #001a00;
+    color: #00ff88;
+    border-color: #00ff88;
+}
+
+.feedback.error {
+    background: #1a0000;
+    color: #ff3333;
+    border-color: #ff3333;
+}
+
+
+/* --- PASSWORD PROTECTION OVERLAY --- */
+
+.password-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInOverlay 0.5s ease;
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.password-card {
+    background: #0a0a0a;
+    border: 2px solid #ff5900;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(255, 89, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+.password-card h2 {
+    color: #ff5900;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+.password-card p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.password-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.password-card input {
+    background: #000;
+    border: 1px solid #333;
+    padding: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.password-card input:focus {
+    border-color: #ff5900;
+    box-shadow: 0 0 15px rgba(255, 89, 0, 0.3);
+}
+
+.unlock-btn {
+    padding: 20px;
+    background: #ff5900;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.unlock-btn:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+.password-error {
+    color: #ff0032 !important;
+    margin-top: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.shake {
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+/* --- FAVORITES BUTTON --- */
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 0;
+    line-height: normal;
+    /* Fix alignment */
+}
+
+.favorite-btn:hover {
+    background: rgba(255, 89, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.favorite-btn.active {
+    color: #ff0032;
+    /* Rosso cuore */
+}
+
+/* --- TOAST NOTIFICATION --- */
+#fav-toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ff5900;
+}
+
+#fav-toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/* --- FAVORITES PAGE SPECIFIC --- */
+.favorites-empty {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.card-type-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 89, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 5;
 }

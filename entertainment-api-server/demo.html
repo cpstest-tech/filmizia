@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment API - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        input, select, button {
+            padding: 12px 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        input:focus, select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        input {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        select {
+            min-width: 150px;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 12px 30px;
+        }
+
+        button:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .results {
+            margin-top: 20px;
+        }
+
+        .item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .item h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .item-details {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #c33;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            input, select, button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Entertainment API</h1>
+        <p class="subtitle">Esplora film, serie TV e band musicali</p>
+
+        <!-- Statistiche -->
+        <div class="section">
+            <h2>📊 Statistiche Generali</h2>
+            <button onclick="loadStats()">Carica Statistiche</button>
+            <div id="stats" class="stats-grid"></div>
+        </div>
+
+        <!-- Film -->
+        <div class="section">
+            <h2>🎬 Film</h2>
+            <div class="controls">
+                <input type="text" id="movieSearch" placeholder="Cerca film per titolo...">
+                <select id="movieGenre">
+                    <option value="">Tutti i generi</option>
+                    <option value="drama">Drama</option>
+                    <option value="crime">Crime</option>
+                    <option value="azione">Azione</option>
+                    <option value="commedia">Commedia</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="fantascienza">Fantascienza</option>
+                </select>
+                <button onclick="searchMovies()">Cerca Film</button>
+                <button onclick="topMovies()">Top Incassi</button>
+            </div>
+            <div id="movieResults" class="results"></div>
+        </div>
+
+        <!-- Serie TV -->
+        <div class="section">
+            <h2>📺 Serie TV</h2>
+            <div class="controls">
+                <input type="text" id="seriesSearch" placeholder="Cerca serie TV...">
+                <select id="seriesNetwork">
+                    <option value="">Tutte le reti</option>
+                    <option value="HBO">HBO</option>
+                    <option value="Netflix">Netflix</option>
+                    <option value="AMC">AMC</option>
+                </select>
+                <button onclick="searchSeries()">Cerca Serie</button>
+                <button onclick="topSeries()">Serie Più Lunghe</button>
+            </div>
+            <div id="seriesResults" class="results"></div>
+        </div>
+
+        <!-- Band -->
+        <div class="section">
+            <h2>🎵 Band Musicali</h2>
+            <div class="controls">
+                <input type="text" id="bandSearch" placeholder="Cerca band...">
+                <select id="bandGenre">
+                    <option value="">Tutti i generi</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="metal">Metal</option>
+                    <option value="blues">Blues</option>
+                </select>
+                <button onclick="searchBands()">Cerca Band</button>
+                <button onclick="topBands()">Band con Più Album</button>
+            </div>
+            <div id="bandResults" class="results"></div>
+        </div>
+
+        <!-- Ricerca Globale -->
+        <div class="section">
+            <h2>🔍 Ricerca Globale</h2>
+            <div class="controls">
+                <input type="text" id="globalSearch" placeholder="Cerca ovunque...">
+                <button onclick="searchGlobal()">Cerca</button>
+            </div>
+            <div id="globalResults" class="results"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:3000';
+
+        async function fetchAPI(endpoint) {
+            try {
+                const response = await fetch(`${API_URL}${endpoint}`);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                console.error('Errore:', error);
+                return null;
+            }
+        }
+
+        async function loadStats() {
+            const container = document.getElementById('stats');
+            container.innerHTML = '<div class="loading">⏳ Caricamento statistiche...</div>';
+            
+            const stats = await fetchAPI('/stats');
+            if (!stats) {
+                container.innerHTML = '<div class="error">Errore nel caricamento delle statistiche</div>';
+                return;
+            }
+
+            container.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-label">Film Totali</div>
+                    <div class="stat-number">${stats.movies.total}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Serie TV</div>
+                    <div class="stat-number">${stats.tv_series.total}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Band Musicali</div>
+                    <div class="stat-number">${stats.bands.total}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Film Anime</div>
+                    <div class="stat-number">${stats.movies.anime}</div>
+                </div>
+            `;
+        }
+
+        async function searchMovies() {
+            const search = document.getElementById('movieSearch').value;
+            const genre = document.getElementById('movieGenre').value;
+            
+            let endpoint = '/movies?';
+            if (search) endpoint += `titolo_like=${search}&`;
+            if (genre) endpoint += `genere_like=${genre}&`;
+            endpoint += '_limit=20';
+
+            const container = document.getElementById('movieResults');
+            container.innerHTML = '<div class="loading">⏳ Caricamento...</div>';
+            
+            const movies = await fetchAPI(endpoint);
+            displayMovies(movies, container);
+        }
+
+        async function topMovies() {
+            const container = document.getElementById('movieResults');
+            container.innerHTML = '<div class="loading">⏳ Caricamento top incassi...</div>';
+            
+            const movies = await fetchAPI('/movies?_sort=incasso_mondiale_eur&_order=desc&_limit=10');
+            displayMovies(movies, container);
+        }
+
+        function displayMovies(movies, container) {
+            if (!movies || movies.length === 0) {
+                container.innerHTML = '<div class="no-results">😔 Nessun film trovato</div>';
+                return;
+            }
+
+            container.innerHTML = movies.map(movie => `
+                <div class="item">
+                    <h3>${movie.titolo} (${movie.anno})</h3>
+                    <div class="item-details">
+                        ${movie.regia ? `<strong>Regia:</strong> ${movie.regia}<br>` : ''}
+                        <strong>Paese:</strong> ${movie.paese}<br>
+                        ${movie.durata_min ? `<strong>Durata:</strong> ${movie.durata_min} min<br>` : ''}
+                        ${movie.incasso_mondiale_eur ? `<strong>Incasso:</strong> €${movie.incasso_mondiale_eur.toLocaleString()}<br>` : ''}
+                        <div style="margin-top: 10px;">
+                            ${movie.genere.map(g => `<span class="badge">${g}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        async function searchSeries() {
+            const search = document.getElementById('seriesSearch').value;
+            const network = document.getElementById('seriesNetwork').value;
+            
+            let endpoint = '/tv_series?';
+            if (search) endpoint += `titolo_like=${search}&`;
+            if (network) endpoint += `network_streaming_like=${network}&`;
+            endpoint += '_limit=20';
+
+            const container = document.getElementById('seriesResults');
+            container.innerHTML = '<div class="loading">⏳ Caricamento...</div>';
+            
+            const series = await fetchAPI(endpoint);
+            displaySeries(series, container);
+        }
+
+        async function topSeries() {
+            const container = document.getElementById('seriesResults');
+            container.innerHTML = '<div class="loading">⏳ Caricamento serie più lunghe...</div>';
+            
+            const series = await fetchAPI('/tv_series?_sort=stagioni&_order=desc&_limit=10');
+            displaySeries(series, container);
+        }
+
+        function displaySeries(series, container) {
+            if (!series || series.length === 0) {
+                container.innerHTML = '<div class="no-results">😔 Nessuna serie trovata</div>';
+                return;
+            }
+
+            container.innerHTML = series.map(s => `
+                <div class="item">
+                    <h3>${s.titolo}</h3>
+                    <div class="item-details">
+                        <strong>Anni:</strong> ${s.anni}<br>
+                        <strong>Stagioni:</strong> ${s.stagioni}<br>
+                        <strong>Network:</strong> ${s.network_streaming.join(', ')}<br>
+                        ${s.premi_principali_vinti ? `<strong>Premi:</strong> ${s.premi_principali_vinti}<br>` : ''}
+                        <div style="margin-top: 10px;">
+                            ${s.genere.map(g => `<span class="badge">${g}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        async function searchBands() {
+            const search = document.getElementById('bandSearch').value;
+            const genre = document.getElementById('bandGenre').value;
+            
+            let endpoint = '/bands?';
+            if (search) endpoint += `band_like=${search}&`;
+            if (genre) endpoint += `genere_like=${genre}&`;
+            endpoint += '_limit=20';
+
+            const container = document.getElementById('bandResults');
+            container.innerHTML = '<div class="loading">⏳ Caricamento...</div>';
+            
+            const bands = await fetchAPI(endpoint);
+            displayBands(bands, container);
+        }
+
+        async function topBands() {
+            const container = document.getElementById('bandResults');
+            container.innerHTML = '<div class="loading">⏳ Caricamento band con più album...</div>';
+            
+            const bands = await fetchAPI('/bands?_sort=numero_album_pubblicati&_order=desc&_limit=10');
+            displayBands(bands, container);
+        }
+
+        function displayBands(bands, container) {
+            if (!bands || bands.length === 0) {
+                container.innerHTML = '<div class="no-results">😔 Nessuna band trovata</div>';
+                return;
+            }
+
+            container.innerHTML = bands.map(band => `
+                <div class="item">
+                    <h3>${band.band}</h3>
+                    <div class="item-details">
+                        <strong>Paese:</strong> ${band.paese_origine}<br>
+                        <strong>Periodo:</strong> ${band.periodo_attivita}<br>
+                        ${band.numero_album_pubblicati ? `<strong>Album pubblicati:</strong> ${band.numero_album_pubblicati}<br>` : ''}
+                        ${band.componenti.length ? `<strong>Membri:</strong> ${band.componenti.join(', ')}<br>` : ''}
+                        ${band.premi_principali_vinti ? `<strong>Premi:</strong> ${band.premi_principali_vinti}<br>` : ''}
+                        <div style="margin-top: 10px;">
+                            ${band.genere.map(g => `<span class="badge">${g}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        async function searchGlobal() {
+            const search = document.getElementById('globalSearch').value;
+            if (!search) return;
+
+            const container = document.getElementById('globalResults');
+            container.innerHTML = '<div class="loading">⏳ Ricerca in corso...</div>';
+            
+            const results = await fetchAPI(`/search?q=${search}`);
+            
+            if (!results) {
+                container.innerHTML = '<div class="error">Errore nella ricerca</div>';
+                return;
+            }
+
+            let html = `<p><strong>Trovati ${results.results.total} risultati per "${results.query}"</strong></p>`;
+            
+            if (results.results.movies.length > 0) {
+                html += '<h3 style="margin-top: 20px;">Film</h3>';
+                results.results.movies.forEach(movie => {
+                    html += `<div class="item">
+                        <h3>${movie.titolo} (${movie.anno})</h3>
+                        <div class="item-details">${movie.genere.join(', ')}</div>
+                    </div>`;
+                });
+            }
+
+            if (results.results.tv_series.length > 0) {
+                html += '<h3 style="margin-top: 20px;">Serie TV</h3>';
+                results.results.tv_series.forEach(series => {
+                    html += `<div class="item">
+                        <h3>${series.titolo}</h3>
+                        <div class="item-details">${series.genere.join(', ')}</div>
+                    </div>`;
+                });
+            }
+
+            if (results.results.bands.length > 0) {
+                html += '<h3 style="margin-top: 20px;">Band</h3>';
+                results.results.bands.forEach(band => {
+                    html += `<div class="item">
+                        <h3>${band.band}</h3>
+                        <div class="item-details">${band.genere.join(', ')}</div>
+                    </div>`;
+                });
+            }
+
+            if (results.results.total === 0) {
+                html = '<div class="no-results">😔 Nessun risultato trovato</div>';
+            }
+
+            container.innerHTML = html;
+        }
+
+        // Carica le statistiche all'avvio
+        window.addEventListener('load', loadStats);
+
+        // Aggiungi listener per Enter
+        document.getElementById('movieSearch').addEventListener('keypress', e => {
+            if (e.key === 'Enter') searchMovies();
+        });
+        document.getElementById('seriesSearch').addEventListener('keypress', e => {
+            if (e.key === 'Enter') searchSeries();
+        });
+        document.getElementById('bandSearch').addEventListener('keypress', e => {
+            if (e.key === 'Enter') searchBands();
+        });
+        document.getElementById('globalSearch').addEventListener('keypress', e => {
+            if (e.key === 'Enter') searchGlobal();
+        });
+    </script>
+</body>
+</html>

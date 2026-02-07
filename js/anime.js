@@ -24,23 +24,20 @@ async function cercaAnime() {
     }
 
     try {
-        const risposta = await fetch(`http://localhost:3000/search?q=${encodeURIComponent(query)}`);
+        const risposta = await fetch(`http://localhost:3000/anime?titolo_like=${encodeURIComponent(query)}`);
         if (!risposta.ok) throw new Error('Errore nella ricerca');
 
-        const data = await risposta.json();
+        const anime = await risposta.json();
         const container = document.querySelector('.contenitori');
         container.innerHTML = '';
-        if (data.results && data.results.anime && Array.isArray(data.results.anime)) {
-            const filteredAnime = data.results.anime.filter(s => s.titolo.toLowerCase().includes(query.toLowerCase()));
 
-            filteredAnime.forEach(s => {
-                const card = creaCardAnime(s);
-                container.appendChild(card);
-            });
+        anime.forEach(s => {
+            const card = creaCardAnime(s);
+            container.appendChild(card);
+        });
 
-            if (filteredAnime.length === 0) {
-                container.innerHTML = '<p style="color: white; text-align: center; width: 100%;">Nessun anime trovato.</p>';
-            }
+        if (anime.length === 0) {
+            container.innerHTML = '<p style="color: white; text-align: center; width: 100%;">Nessun anime trovato.</p>';
         }
 
     } catch (error) {
@@ -74,6 +71,9 @@ function creaCardAnime(file) {
     btn.onclick = () => apriDettagli(file);
     overlay.appendChild(btn);
 
+    const favBtn = createFavoriteButton(file, 'anime');
+    card.appendChild(favBtn);
+
     card.appendChild(overlay);
 
     return card;
@@ -103,5 +103,16 @@ function apriDettagli(file) {
     modal.style.display = 'flex';
 }
 
-window.onload = loadAnime;
+window.onload = () => {
+    loadAnime();
+
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                cercaAnime();
+            }
+        });
+    }
+};
 

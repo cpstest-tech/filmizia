@@ -24,23 +24,20 @@ async function cercaBand() {
     }
 
     try {
-        const risposta = await fetch(`http://localhost:3000/search?q=${encodeURIComponent(query)}`);
+        const risposta = await fetch(`http://localhost:3000/bands?band_like=${encodeURIComponent(query)}`);
         if (!risposta.ok) throw new Error('Errore nella ricerca');
 
-        const data = await risposta.json();
+        const bands = await risposta.json();
         const container = document.querySelector('.contenitori');
         container.innerHTML = '';
-        if (data.results && data.results.bands && Array.isArray(data.results.bands)) {
-            const filteredBands = data.results.bands.filter(s => s.band.toLowerCase().includes(query.toLowerCase()));
 
-            filteredBands.forEach(s => {
-                const card = creaCardBand(s);
-                container.appendChild(card);
-            });
+        bands.forEach(s => {
+            const card = creaCardBand(s);
+            container.appendChild(card);
+        });
 
-            if (filteredBands.length === 0) {
-                container.innerHTML = '<p style="color: white; text-align: center; width: 100%;">Nessuna band trovata.</p>';
-            }
+        if (bands.length === 0) {
+            container.innerHTML = '<p style="color: white; text-align: center; width: 100%;">Nessuna band trovata.</p>';
         }
 
     } catch (error) {
@@ -74,6 +71,9 @@ function creaCardBand(file) {
     btn.onclick = () => apriDettagli(file);
     overlay.appendChild(btn);
 
+    const favBtn = createFavoriteButton(file, 'band');
+    card.appendChild(favBtn);
+
     card.appendChild(overlay);
 
     return card;
@@ -106,5 +106,16 @@ function apriDettagli(file) {
     modal.style.display = 'flex';
 }
 
-window.onload = loadBand;
+window.onload = () => {
+    loadBand();
+
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                cercaBand();
+            }
+        });
+    }
+};
 

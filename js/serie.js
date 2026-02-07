@@ -25,23 +25,20 @@ async function cercaSerie() {
     }
 
     try {
-        const risposta = await fetch(`http://localhost:3000/search?q=${encodeURIComponent(query)}`);
+        const risposta = await fetch(`http://localhost:3000/tv_series?titolo_like=${encodeURIComponent(query)}`);
         if (!risposta.ok) throw new Error('Errore nella ricerca');
 
-        const data = await risposta.json();
+        const serie = await risposta.json();
         const container = document.querySelector('.contenitori');
         container.innerHTML = '';
-        if (data.results && data.results.tv_series && Array.isArray(data.results.tv_series)) {
-            const filteredSeries = data.results.tv_series.filter(s => s.titolo.toLowerCase().includes(query.toLowerCase()));
 
-            filteredSeries.forEach(s => {
-                const card = creaCardSerie(s);
-                container.appendChild(card);
-            });
+        serie.forEach(s => {
+            const card = creaCardSerie(s);
+            container.appendChild(card);
+        });
 
-            if (filteredSeries.length === 0) {
-                container.innerHTML = '<p style="color: white; text-align: center; width: 100%;">Nessuna serie trovata.</p>';
-            }
+        if (serie.length === 0) {
+            container.innerHTML = '<p style="color: white; text-align: center; width: 100%;">Nessuna serie trovata.</p>';
         }
 
     } catch (error) {
@@ -75,6 +72,9 @@ function creaCardSerie(file) {
     btn.onclick = () => apriDettagli(file);
     overlay.appendChild(btn);
 
+    const favBtn = createFavoriteButton(file, 'serie');
+    card.appendChild(favBtn);
+
     card.appendChild(overlay);
 
     return card;
@@ -102,5 +102,16 @@ function apriDettagli(file) {
     modal.style.display = 'flex';
 }
 
-window.onload = loadSerieTV;
+window.onload = () => {
+    loadSerieTV();
+
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                cercaSerie();
+            }
+        });
+    }
+};
 

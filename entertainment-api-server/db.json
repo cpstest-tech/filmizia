@@ -1,0 +1,4574 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "titolo": "The Godfather",
+      "anno": 1972,
+      "paese": "US",
+      "genere": [
+        "drama",
+        "crime"
+      ],
+      "is_anime": false,
+      "durata_min": 175,
+      "regia": "Francis Ford Coppola",
+      "incasso_mondiale_eur": 246120986,
+      "fonte": "IMDb / Box Office Mojo",
+      "premi_vinti": [
+        "3 Oscar (Miglior Film, Attore, Sceneggiatura)",
+        "5 Golden Globe"
+      ],
+      "curiosita": "Marlon Brando rifiutò l'Oscar come protesta. La testa di cavallo era vera.",
+      "cast": [
+        "Marlon Brando",
+        "Al Pacino",
+        "James Caan",
+        "Robert Duvall",
+        "Diane Keaton"
+      ]
+    },
+    {
+      "id": 2,
+      "titolo": "The Godfather Part II",
+      "anno": 1974,
+      "paese": "US",
+      "genere": [
+        "drama",
+        "crime"
+      ],
+      "is_anime": false,
+      "durata_min": 202,
+      "regia": "Francis Ford Coppola",
+      "incasso_mondiale_eur": 88870220,
+      "fonte": "IMDb / Box Office Mojo",
+      "premi_vinti": [
+        "6 Oscar (Miglior Film, Regia, Attore non protagonista)",
+        "4 Golden Globe"
+      ],
+      "curiosita": "Primo sequel a vincere l'Oscar per il Miglior Film. Al Pacino chiese un aumento dopo il successo del primo.",
+      "cast": [
+        "Al Pacino",
+        "Robert De Niro",
+        "Robert Duvall",
+        "Diane Keaton",
+        "John Cazale"
+      ]
+    },
+    {
+      "id": 3,
+      "titolo": "The Dark Knight",
+      "anno": 2008,
+      "paese": "US",
+      "genere": [
+        "azione",
+        "crime"
+      ],
+      "is_anime": false,
+      "durata_min": 152,
+      "regia": "Christopher Nolan",
+      "incasso_mondiale_eur": 854918547.1,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "2 Oscar (Attore non protagonista a Heath Ledger, Montaggio sonoro)",
+        "1 BAFTA"
+      ],
+      "curiosita": "Heath Ledger si isolò per un mese per prepararsi al ruolo del Joker. Morì prima dell'uscita del film.",
+      "cast": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart",
+        "Michael Caine",
+        "Gary Oldman"
+      ]
+    },
+    {
+      "id": 4,
+      "titolo": "Pulp Fiction",
+      "anno": 1994,
+      "paese": "US",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 154,
+      "regia": "Quentin Tarantino",
+      "incasso_mondiale_eur": 107928762,
+      "fonte": "IMDb / Box Office Mojo",
+      "premi_vinti": [
+        "1 Oscar (Migliore Sceneggiatura Originale)",
+        "Palma d'Oro a Cannes",
+        "2 BAFTA"
+      ],
+      "curiosita": "La sceneggiatura fu scritta in 3 settimane. John Travolta accettò un cachet ridotto per partecipare.",
+      "cast": [
+        "John Travolta",
+        "Samuel L. Jackson",
+        "Uma Thurman",
+        "Bruce Willis",
+        "Tim Roth"
+      ]
+    },
+    {
+      "id": 5,
+      "titolo": "Schindler's List",
+      "anno": 1993,
+      "paese": "US",
+      "genere": [
+        "drama",
+        "storico"
+      ],
+      "is_anime": false,
+      "durata_min": 195,
+      "regia": "Steven Spielberg",
+      "incasso_mondiale_eur": 271960366,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "7 Oscar (Miglior Film, Regia, Sceneggiatura)",
+        "3 Golden Globe",
+        "7 BAFTA"
+      ],
+      "curiosita": "Spielberg girò il film in bianco e nero. Rifiutò il compenso per motivi etici, donandolo alla Shoah Foundation.",
+      "cast": [
+        "Liam Neeson",
+        "Ben Kingsley",
+        "Ralph Fiennes",
+        "Caroline Goodall",
+        "Embeth Davidtz"
+      ]
+    },
+    {
+      "id": 6,
+      "titolo": "Forrest Gump",
+      "anno": 1994,
+      "paese": "US",
+      "genere": [
+        "drama",
+        "commedia"
+      ],
+      "is_anime": false,
+      "durata_min": 142,
+      "regia": "Robert Zemeckis",
+      "incasso_mondiale_eur": 592072744,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "6 Oscar (Miglior Film, Attore, Regia)",
+        "3 Golden Globe",
+        "2 BAFTA"
+      ],
+      "curiosita": "Tom Hanks non fu pagato in anticipo ma ricevette il 7% degli incassi. Le scene di corsa durarono 4 mesi di riprese.",
+      "cast": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Gary Sinise",
+        "Sally Field",
+        "Mykelti Williamson"
+      ]
+    },
+    {
+      "id": 7,
+      "titolo": "Fight Club",
+      "anno": 1999,
+      "paese": "US",
+      "genere": [
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 139,
+      "regia": "David Fincher",
+      "incasso_mondiale_eur": 90817146,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Empire Award per Miglior Film Britannico"
+      ],
+      "curiosita": "Fu un flop al cinema ma divenne cult in home video. Brad Pitt si scheggiò un dente per il ruolo.",
+      "cast": [
+        "Brad Pitt",
+        "Edward Norton",
+        "Helena Bonham Carter",
+        "Meat Loaf",
+        "Jared Leto"
+      ]
+    },
+    {
+      "id": 8,
+      "titolo": "Inception",
+      "anno": 2010,
+      "paese": "US",
+      "genere": [
+        "fantascienza",
+        "azione"
+      ],
+      "is_anime": false,
+      "durata_min": 148,
+      "regia": "Christopher Nolan",
+      "incasso_mondiale_eur": 715198835.8,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "4 Oscar (Fotografia, Effetti sonori, Mixaggio audio, Effetti visivi)",
+        "4 BAFTA"
+      ],
+      "curiosita": "Nolan lavorò alla sceneggiatura per 10 anni. La scena della città che si piega fu girata con set rotanti reali.",
+      "cast": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Ellen Page",
+        "Tom Hardy",
+        "Marion Cotillard"
+      ]
+    },
+    {
+      "id": 9,
+      "titolo": "The Matrix",
+      "anno": 1999,
+      "paese": "US",
+      "genere": [
+        "fantascienza",
+        "azione"
+      ],
+      "is_anime": false,
+      "durata_min": 136,
+      "regia": "Lana e Lilly Wachowski",
+      "incasso_mondiale_eur": 394751646.23,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "4 Oscar (Montaggio, Effetti sonori, Effetti visivi, Montaggio sonoro)",
+        "1 BAFTA"
+      ],
+      "curiosita": "Keanu Reeves donò 75 milioni del suo compenso alla troupe degli effetti speciali. Il bullet time richiese 120 telecamere.",
+      "cast": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss",
+        "Hugo Weaving",
+        "Joe Pantoliano"
+      ]
+    },
+    {
+      "id": 10,
+      "titolo": "Goodfellas",
+      "anno": 1990,
+      "paese": "US",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 169,
+      "regia": "Christopher Nolan",
+      "incasso_mondiale_eur": null,
+      "fonte": null,
+      "premi_vinti": [
+        "1 Oscar (Effetti Visivi)",
+        "1 BAFTA"
+      ],
+      "curiosita": "Nolan piantò 500 acri di mais reali per le scene agricole. Il fisico Kip Thorne consulente scientifico vinse il Nobel nel 2017.",
+      "cast": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain",
+        "Michael Caine",
+        "Matt Damon"
+      ]
+    },
+    {
+      "id": 11,
+      "titolo": "The Shawshank Redemption",
+      "anno": 1994,
+      "paese": "US",
+      "genere": [
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 155,
+      "regia": "Ridley Scott",
+      "incasso_mondiale_eur": 380270167,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "5 Oscar (Miglior Film, Attore)",
+        "4 BAFTA",
+        "2 Golden Globe"
+      ],
+      "curiosita": "Oliver Reed morì durante le riprese. Le sue scene rimanenti furono completate con CGI.",
+      "cast": [
+        "Russell Crowe",
+        "Joaquin Phoenix",
+        "Connie Nielsen",
+        "Oliver Reed",
+        "Richard Harris"
+      ]
+    },
+    {
+      "id": 12,
+      "titolo": "Se7en",
+      "anno": 1995,
+      "paese": "US",
+      "genere": [
+        "thriller",
+        "crime"
+      ],
+      "is_anime": false,
+      "durata_min": 130,
+      "regia": "Christopher Nolan",
+      "incasso_mondiale_eur": 99355195,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "2 Oscar nomination (Fotografia, Direction artistica)"
+      ],
+      "curiosita": "Christian Bale e Hugh Jackman impararono davvero trucchi di magia. David Bowie interpretò Nikola Tesla.",
+      "cast": [
+        "Christian Bale",
+        "Hugh Jackman",
+        "Michael Caine",
+        "Scarlett Johansson",
+        "David Bowie"
+      ]
+    },
+    {
+      "id": 13,
+      "titolo": "Saving Private Ryan",
+      "anno": 1998,
+      "paese": "US",
+      "genere": [
+        "guerra",
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 142,
+      "regia": "Frank Darabont",
+      "incasso_mondiale_eur": 27117627,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "7 nomination agli Oscar",
+        "Nessuna vittoria ma considerato tra i migliori film di sempre"
+      ],
+      "curiosita": "Flop al cinema ma divenne il film più amato su IMDb. Le riprese nel carcere durarono 8 settimane.",
+      "cast": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton",
+        "William Sadler",
+        "Clancy Brown"
+      ]
+    },
+    {
+      "id": 14,
+      "titolo": "Gladiator",
+      "anno": 2000,
+      "paese": "US",
+      "genere": [
+        "storico",
+        "azione"
+      ],
+      "is_anime": false,
+      "durata_min": 96,
+      "regia": "Sidney Lumet",
+      "incasso_mondiale_eur": 1854277,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "3 nomination agli Oscar",
+        "Orso d'Oro al Festival di Berlino"
+      ],
+      "curiosita": "Girato in soli 20 giorni con un budget minimo. Quasi tutto il film si svolge in una stanza.",
+      "cast": [
+        "Henry Fonda",
+        "Lee J. Cobb",
+        "Martin Balsam",
+        "Jack Klugman",
+        "Ed Begley"
+      ]
+    },
+    {
+      "id": 15,
+      "titolo": "The Lord of the Rings: The Fellowship of the Ring",
+      "anno": 2001,
+      "paese": "NZ/US",
+      "genere": [
+        "fantasy",
+        "avventura"
+      ],
+      "is_anime": false,
+      "durata_min": 201,
+      "regia": "Peter Jackson",
+      "incasso_mondiale_eur": null,
+      "fonte": null,
+      "premi_vinti": [
+        "11 Oscar (record assoluto, tutte le categorie nominate)",
+        "4 Golden Globe"
+      ],
+      "curiosita": "Unico film fantasy a vincere l'Oscar per Miglior Film. 11 Oscar senza perderne uno è un record condiviso con Ben-Hur e Titanic.",
+      "cast": [
+        "Elijah Wood",
+        "Viggo Mortensen",
+        "Ian McKellen",
+        "Orlando Bloom",
+        "Sean Astin"
+      ]
+    },
+    {
+      "id": 16,
+      "titolo": "The Lord of the Rings: The Two Towers",
+      "anno": 2002,
+      "paese": "NZ/US",
+      "genere": [
+        "fantasy",
+        "avventura"
+      ],
+      "is_anime": false,
+      "durata_min": 124,
+      "regia": "Irvin Kershner",
+      "incasso_mondiale_eur": 469327765,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "2 Oscar (Effetti visivi speciali, Suono)",
+        "1 BAFTA"
+      ],
+      "curiosita": "La rivelazione 'Io sono tuo padre' fu tenuta segreta anche al cast. Solo 5 persone la conoscevano prima dell'uscita.",
+      "cast": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Billy Dee Williams",
+        "Anthony Daniels"
+      ]
+    },
+    {
+      "id": 17,
+      "titolo": "The Lord of the Rings: The Return of the King",
+      "anno": 2003,
+      "paese": "NZ/US",
+      "genere": [
+        "fantasy",
+        "avventura"
+      ],
+      "is_anime": false,
+      "durata_min": 207,
+      "regia": "Akira Kurosawa",
+      "incasso_mondiale_eur": 272043,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Leone d'Argento al Festival di Venezia",
+        "2 Oscar nomination"
+      ],
+      "curiosita": "Girato in oltre un anno con 148 giorni di riprese. Influenzò innumerevoli film western e d'azione.",
+      "cast": [
+        "Toshiro Mifune",
+        "Takashi Shimura",
+        "Keiko Tsushima",
+        "Yoshio Inaba",
+        "Seiji Miyaguchi"
+      ]
+    },
+    {
+      "id": 18,
+      "titolo": "Titanic",
+      "anno": 1997,
+      "paese": "US",
+      "genere": [
+        "drama",
+        "romance"
+      ],
+      "is_anime": false,
+      "durata_min": 132,
+      "regia": "Bong Joon-ho",
+      "incasso_mondiale_eur": 1928813633.11,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "4 Oscar (Miglior Film, Regia, Sceneggiatura, Film Internazionale)",
+        "Palma d'Oro a Cannes"
+      ],
+      "curiosita": "Primo film non in inglese a vincere l'Oscar per Miglior Film. La casa dei ricchi fu costruita da zero.",
+      "cast": [
+        "Song Kang-ho",
+        "Lee Sun-kyun",
+        "Cho Yeo-jeong",
+        "Choi Woo-shik",
+        "Park So-dam"
+      ]
+    },
+    {
+      "id": 19,
+      "titolo": "Avatar",
+      "anno": 2009,
+      "paese": "US",
+      "genere": [
+        "fantascienza",
+        "avventura"
+      ],
+      "is_anime": false,
+      "durata_min": 125,
+      "regia": "Hayao Miyazaki",
+      "incasso_mondiale_eur": 289052559,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "1 Oscar (Miglior Film d'Animazione)",
+        "Orso d'Oro a Berlino"
+      ],
+      "curiosita": "Film d'animazione giapponese con maggiori incassi di sempre. Ogni fotogramma è disegnato a mano.",
+      "cast": [
+        "Voci giapponesi: Rumi Hiiragi",
+        "Miyu Irino",
+        "Mari Natsuki"
+      ]
+    },
+    {
+      "id": 20,
+      "titolo": "Avengers: Endgame",
+      "anno": 2019,
+      "paese": "US",
+      "genere": [
+        "azione",
+        "fantascienza"
+      ],
+      "is_anime": false,
+      "durata_min": 106,
+      "regia": "Damien Chazelle",
+      "incasso_mondiale_eur": 44254137,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "3 Oscar (Attore non protagonista, Montaggio, Mixaggio)",
+        "1 BAFTA"
+      ],
+      "curiosita": "Miles Teller suonò davvero la batteria. Il film fu girato in soli 19 giorni con budget limitato.",
+      "cast": [
+        "Miles Teller",
+        "J.K. Simmons",
+        "Paul Reiser",
+        "Melissa Benoist"
+      ]
+    },
+    {
+      "id": 21,
+      "titolo": "Interstellar",
+      "anno": 2014,
+      "paese": "US",
+      "genere": [
+        "fantascienza",
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 194,
+      "regia": "James Cameron",
+      "incasso_mondiale_eur": 659013398.91,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "11 Oscar (Miglior Film, Regia, Fotografia)",
+        "4 Golden Globe"
+      ],
+      "curiosita": "Film più costoso mai realizzato all'epoca (200M$). Kate Winslet si ammalò di polmonite durante le riprese in acqua.",
+      "cast": [
+        "Leonardo DiCaprio",
+        "Kate Winslet",
+        "Billy Zane",
+        "Kathy Bates",
+        "Frances Fisher"
+      ]
+    },
+    {
+      "id": 22,
+      "titolo": "The Silence of the Lambs",
+      "anno": 1991,
+      "paese": "US",
+      "genere": [
+        "thriller",
+        "crime"
+      ],
+      "is_anime": false,
+      "durata_min": 162,
+      "regia": "James Cameron",
+      "incasso_mondiale_eur": null,
+      "fonte": null,
+      "premi_vinti": [
+        "3 Oscar (Fotografia, Direction artistica, Effetti visivi)",
+        "2 Golden Globe"
+      ],
+      "curiosita": "Cameron aspettò 10 anni che la tecnologia fosse pronta. La lingua Na'vi fu creata da un linguista con oltre 1000 parole.",
+      "cast": [
+        "Sam Worthington",
+        "Zoe Saldana",
+        "Sigourney Weaver",
+        "Stephen Lang",
+        "Michelle Rodriguez"
+      ]
+    },
+    {
+      "id": 23,
+      "titolo": "Parasite",
+      "anno": 2019,
+      "paese": "KR",
+      "genere": [
+        "thriller",
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 181,
+      "regia": "Anthony e Joe Russo",
+      "incasso_mondiale_eur": 223599310.17,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "1 Oscar nomination (Effetti visivi)",
+        "Vari MTV Movie Awards"
+      ],
+      "curiosita": "Secondo film con maggiori incassi di sempre. La scena finale con tutti gli eroi coinvolse oltre 300 attori e stuntman.",
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Chris Hemsworth",
+        "Scarlett Johansson"
+      ]
+    },
+    {
+      "id": 24,
+      "titolo": "Spirited Away",
+      "anno": 2001,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "fantasy"
+      ],
+      "is_anime": true,
+      "durata_min": 88,
+      "regia": "Roger Allers, Rob Minkoff",
+      "incasso_mondiale_eur": 812865768,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "2 Oscar (Colonna sonora, Canzone)",
+        "3 Golden Globe"
+      ],
+      "curiosita": "La scena dello stampede richiese 3 anni di lavoro. Elton John compose le canzoni in sole 2 settimane.",
+      "cast": [
+        "Voci: Matthew Broderick",
+        "James Earl Jones",
+        "Jeremy Irons",
+        "Whoopi Goldberg",
+        "Nathan Lane"
+      ]
+    },
+    {
+      "id": 25,
+      "titolo": "Your Name",
+      "anno": 2016,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "drama",
+        "fantasy"
+      ],
+      "is_anime": true,
+      "durata_min": 81,
+      "regia": "John Lasseter",
+      "incasso_mondiale_eur": 341466171,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Oscar speciale per il primo lungometraggio CGI",
+        "3 nomination agli Oscar"
+      ],
+      "curiosita": "Primo film completamente in CGI. La produzione rischiò la cancellazione quando Disney non apprezzò le prime versioni.",
+      "cast": [
+        "Voci: Tom Hanks",
+        "Tim Allen",
+        "Don Rickles",
+        "Jim Varney",
+        "Wallace Shawn"
+      ]
+    },
+    {
+      "id": 26,
+      "titolo": "Princess Mononoke",
+      "anno": 1997,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "fantasy"
+      ],
+      "is_anime": true,
+      "durata_min": 135,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 331386285,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 27,
+      "titolo": "Howl's Moving Castle",
+      "anno": 2004,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "fantasy"
+      ],
+      "is_anime": true,
+      "durata_min": 150,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 307272417,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 28,
+      "titolo": "Akira",
+      "anno": 1988,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "fantascienza"
+      ],
+      "is_anime": true,
+      "durata_min": 122,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 88672920,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 29,
+      "titolo": "Ghost in the Shell",
+      "anno": 1995,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "fantascienza"
+      ],
+      "is_anime": true,
+      "durata_min": 138,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 192488320,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 30,
+      "titolo": "The Boy and the Heron",
+      "anno": 2023,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "fantasy"
+      ],
+      "is_anime": true,
+      "durata_min": 166,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 241245427.53,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 31,
+      "titolo": "Demon Slayer: Kimetsu no Yaiba – The Movie: Mugen Train",
+      "anno": 2020,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "azione",
+        "fantasy"
+      ],
+      "is_anime": true,
+      "durata_min": 149,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 414283086.36,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 32,
+      "titolo": "Cowboy Bebop: The Movie",
+      "anno": 2001,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "azione",
+        "neo-noir"
+      ],
+      "is_anime": true,
+      "durata_min": 138,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 17289945,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 33,
+      "titolo": "One Piece Film: Red",
+      "anno": 2022,
+      "paese": "JP",
+      "genere": [
+        "animazione",
+        "avventura"
+      ],
+      "is_anime": true,
+      "durata_min": 132,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 145899595.47,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 34,
+      "titolo": "The Lion King",
+      "anno": 1994,
+      "paese": "US",
+      "genere": [
+        "animazione",
+        "avventura"
+      ],
+      "is_anime": false,
+      "durata_min": 123,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 833896808.04,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 35,
+      "titolo": "Toy Story",
+      "anno": 1995,
+      "paese": "US",
+      "genere": [
+        "animazione",
+        "commedia"
+      ],
+      "is_anime": false,
+      "durata_min": 155,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 318134928.46,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 36,
+      "titolo": "Coco",
+      "anno": 2017,
+      "paese": "US",
+      "genere": [
+        "animazione",
+        "avventura"
+      ],
+      "is_anime": false,
+      "durata_min": 147,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 231176113,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 37,
+      "titolo": "The Incredibles",
+      "anno": 2004,
+      "paese": "US",
+      "genere": [
+        "animazione",
+        "azione"
+      ],
+      "is_anime": false,
+      "durata_min": 132,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 189492948,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 38,
+      "titolo": "La La Land",
+      "anno": 2016,
+      "paese": "US",
+      "genere": [
+        "musicale",
+        "romance"
+      ],
+      "is_anime": false,
+      "durata_min": 176,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 217986583,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 39,
+      "titolo": "Whiplash",
+      "anno": 2014,
+      "paese": "US",
+      "genere": [
+        "drama",
+        "musicale"
+      ],
+      "is_anime": false,
+      "durata_min": 142,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 471318647,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 40,
+      "titolo": "Mad Max: Fury Road",
+      "anno": 2015,
+      "paese": "AU/US",
+      "genere": [
+        "azione",
+        "avventura"
+      ],
+      "is_anime": false,
+      "durata_min": 146,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 323144569.92,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 41,
+      "titolo": "Joker",
+      "anno": 2019,
+      "paese": "US",
+      "genere": [
+        "drama",
+        "crime"
+      ],
+      "is_anime": false,
+      "durata_min": 120,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 918711727.99,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 42,
+      "titolo": "The Social Network",
+      "anno": 2010,
+      "paese": "US",
+      "genere": [
+        "drama",
+        "biografico"
+      ],
+      "is_anime": false,
+      "durata_min": 151,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 191558294.16,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 43,
+      "titolo": "No Country for Old Men",
+      "anno": 2007,
+      "paese": "US",
+      "genere": [
+        "thriller",
+        "crime"
+      ],
+      "is_anime": false,
+      "durata_min": 151,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 316848854,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 44,
+      "titolo": "The Departed",
+      "anno": 2006,
+      "paese": "US",
+      "genere": [
+        "crime",
+        "thriller"
+      ],
+      "is_anime": false,
+      "durata_min": 176,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 93174546,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 45,
+      "titolo": "City of God",
+      "anno": 2002,
+      "paese": "BR",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 147,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 426122756,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 46,
+      "titolo": "Oldboy",
+      "anno": 2003,
+      "paese": "KR",
+      "genere": [
+        "thriller",
+        "azione"
+      ],
+      "is_anime": false,
+      "durata_min": 138,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 206970929,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 47,
+      "titolo": "The Pianist",
+      "anno": 2002,
+      "paese": "FR/PL/DE/UK",
+      "genere": [
+        "drama",
+        "storico"
+      ],
+      "is_anime": false,
+      "durata_min": 170,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 179442339,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 48,
+      "titolo": "Amélie",
+      "anno": 2001,
+      "paese": "FR",
+      "genere": [
+        "commedia",
+        "drama",
+        "romance"
+      ],
+      "is_anime": false,
+      "durata_min": 133,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 422836108,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 49,
+      "titolo": "Pan's Labyrinth",
+      "anno": 2006,
+      "paese": "ES/MX",
+      "genere": [
+        "fantasy",
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 170,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 78785189,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "id": 50,
+      "titolo": "The Grand Budapest Hotel",
+      "anno": 2014,
+      "paese": "US/DE",
+      "genere": [
+        "commedia",
+        "drama"
+      ],
+      "is_anime": false,
+      "durata_min": 128,
+      "regia": "Vari registi",
+      "incasso_mondiale_eur": 46934251,
+      "fonte": "Box Office Mojo",
+      "premi_vinti": [
+        "Varie nomination e premi"
+      ],
+      "curiosita": "Film acclamato dalla critica e apprezzato dal pubblico internazionale.",
+      "cast": [
+        "Cast stellare internazionale"
+      ]
+    },
+    {
+      "titolo": "prova",
+      "anno": 2002,
+      "paese": "italia",
+      "genere": [
+        "azione"
+      ],
+      "is_anime": false,
+      "durata_min": 104,
+      "regia": "no",
+      "incasso_mondiale_eur": 1000,
+      "fonte": "f",
+      "premi_vinti": [
+        "kr"
+      ],
+      "curiosita": "f",
+      "cast": [
+        "Leonardo",
+        "di capri"
+      ],
+      "id": 51
+    },
+    {
+      "curiosita": "gg",
+      "fonte": "gg",
+      "titolo": "ciao",
+      "anno": 2222,
+      "paese": "f",
+      "genere": [
+        "Paolo"
+      ],
+      "is_anime": true,
+      "durata_min": 222,
+      "regia": "loris",
+      "incasso_mondiale_eur": 2,
+      "premi_vinti": [
+        "gg"
+      ],
+      "cast": [
+        "gg"
+      ],
+      "id": 52
+    }
+  ],
+  "tv_series": [
+    {
+      "id": 1,
+      "titolo": "Breaking Bad",
+      "genere": [
+        "crime",
+        "drama",
+        "thriller"
+      ],
+      "paese": "US",
+      "anni": "2008–2013",
+      "stagioni": 5,
+      "network_streaming": [
+        "AMC",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Felina (S05E16)",
+      "premi_principali_vinti": "16 Primetime Emmy Awards",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "Vince Gilligan voleva uccidere Jesse Pinkman nella prima stagione. Aaron Paul fu così bravo che lo tenne per tutta la serie.",
+      "cast": [
+        "Bryan Cranston",
+        "Aaron Paul",
+        "Anna Gunn",
+        "Dean Norris",
+        "Betsy Brandt"
+      ]
+    },
+    {
+      "id": 2,
+      "titolo": "Game of Thrones",
+      "genere": [
+        "fantasy",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2011–2019",
+      "stagioni": 8,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "The Long Night (S08E03)",
+      "premi_principali_vinti": "59 Primetime Emmy Awards",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "La serie costò oltre 15 milioni per episodio nell'ultima stagione. Più di 200 paesi trasmisero la serie contemporaneamente.",
+      "cast": [
+        "Emilia Clarke",
+        "Kit Harington",
+        "Peter Dinklage",
+        "Lena Headey",
+        "Nikolaj Coster-Waldau"
+      ]
+    },
+    {
+      "id": 3,
+      "titolo": "The Sopranos",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "1999–2007",
+      "stagioni": 6,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "Made in America (S06E21)",
+      "premi_principali_vinti": "21 Primetime Emmy Awards, 5 Golden Globes",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "Considerata la serie che ha rivoluzionato la TV. David Chase si ispirò alla propria madre per il personaggio di Livia Soprano.",
+      "cast": [
+        "James Gandolfini",
+        "Edie Falco",
+        "Michael Imperioli",
+        "Dominic Chianese",
+        "Steven Van Zandt"
+      ]
+    },
+    {
+      "id": 4,
+      "titolo": "The Wire",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2002–2008",
+      "stagioni": 5,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "Final Grades (S04E13)",
+      "premi_principali_vinti": "2 Primetime Emmy Awards, Peabody Award",
+      "fonte": "IMDb",
+      "curiosita": "Molti attori erano ex criminali o poliziotti reali di Baltimora. La serie fu ignorata agli Emmy ma è considerata tra le migliori mai realizzate.",
+      "cast": [
+        "Dominic West",
+        "Lance Reddick",
+        "Sonja Sohn",
+        "Wendell Pierce",
+        "Michael K. Williams"
+      ]
+    },
+    {
+      "id": 5,
+      "titolo": "Friends",
+      "genere": [
+        "commedia"
+      ],
+      "paese": "US",
+      "anni": "1994–2004",
+      "stagioni": 10,
+      "network_streaming": [
+        "NBC",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The Last One (S10E17-18)",
+      "premi_principali_vinti": "6 Primetime Emmy Awards su 62 nomination",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "Il cast negoziò insieme i contratti, guadagnando tutti 1 milione per episodio nell'ultima stagione. Monica era originariamente il personaggio principale.",
+      "cast": [
+        "Jennifer Aniston",
+        "Courteney Cox",
+        "Lisa Kudrow",
+        "Matt LeBlanc",
+        "Matthew Perry",
+        "David Schwimmer"
+      ]
+    },
+    {
+      "id": 6,
+      "titolo": "Seinfeld",
+      "genere": [
+        "commedia"
+      ],
+      "paese": "US",
+      "anni": "1989–1998",
+      "stagioni": 9,
+      "network_streaming": [
+        "NBC",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The Finale (S09E22)",
+      "premi_principali_vinti": "10 Primetime Emmy Awards, 3 Golden Globe",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "Definito 'lo show sul nulla'. Larry David basò George Costanza su sé stesso. L'episodio finale fu visto da 76 milioni di persone.",
+      "cast": [
+        "Jerry Seinfeld",
+        "Jason Alexander",
+        "Julia Louis-Dreyfus",
+        "Michael Richards"
+      ]
+    },
+    {
+      "id": 7,
+      "titolo": "The Office (US)",
+      "genere": [
+        "commedia"
+      ],
+      "paese": "US",
+      "anni": "2005–2013",
+      "stagioni": 9,
+      "network_streaming": [
+        "NBC",
+        "Peacock"
+      ],
+      "episodio_piu_visto": "The Battle of Starkourt (S03E08)",
+      "premi_principali_vinti": "6 Primetime Emmy Awards, 2 Screen Actors Guild Awards",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "I fratelli Duffer scrissero la bibbia della serie in 20 pagine. La serie fu rifiutata da 15 network prima di Netflix.",
+      "cast": [
+        "Millie Bobby Brown",
+        "Finn Wolfhard",
+        "Winona Ryder",
+        "David Harbour",
+        "Gaten Matarazzo"
+      ]
+    },
+    {
+      "id": 8,
+      "titolo": "Stranger Things",
+      "genere": [
+        "fantascienza",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2016–presente",
+      "stagioni": 4,
+      "network_streaming": [
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The Reichenbach Fall (S02E03)",
+      "premi_principali_vinti": "9 Primetime Emmy Awards, 3 BAFTA TV Awards",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "Benedict Cumberbatch e Martin Freeman erano amici prima della serie. Ogni episodio è lungo come un film.",
+      "cast": [
+        "Benedict Cumberbatch",
+        "Martin Freeman",
+        "Una Stubbs",
+        "Rupert Graves",
+        "Louise Brealey"
+      ]
+    },
+    {
+      "id": 9,
+      "titolo": "The Crown",
+      "genere": [
+        "drama",
+        "biografico"
+      ],
+      "paese": "UK",
+      "anni": "2016–2023",
+      "stagioni": 6,
+      "network_streaming": [
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Aberfan (S03E03)",
+      "premi_principali_vinti": "21 Primetime Emmy Awards, 7 Golden Globe",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "La serie costa circa 13 milioni per episodio. Il cast cambia completamente ogni 2 stagioni per mostrare l'invecchiamento.",
+      "cast": [
+        "Claire Foy",
+        "Olivia Colman",
+        "Imelda Staunton",
+        "Matt Smith",
+        "Tobias Menzies"
+      ]
+    },
+    {
+      "id": 10,
+      "titolo": "The Mandalorian",
+      "genere": [
+        "fantascienza",
+        "avventura"
+      ],
+      "paese": "US",
+      "anni": "2019–presente",
+      "stagioni": 3,
+      "network_streaming": [
+        "Disney+"
+      ],
+      "episodio_piu_visto": "Goodbye, Michael (S07E22)",
+      "premi_principali_vinti": "5 Primetime Emmy Awards, 1 Golden Globe",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "Steve Carell improvvisò molte delle sue battute più famose. John Krasinski e Jenna Fischer furono gli unici a fare l'audizione insieme.",
+      "cast": [
+        "Steve Carell",
+        "Rainn Wilson",
+        "John Krasinski",
+        "Jenna Fischer",
+        "B.J. Novak"
+      ]
+    },
+    {
+      "id": 11,
+      "titolo": "The Witcher",
+      "genere": [
+        "fantasy",
+        "avventura"
+      ],
+      "paese": "PL/US",
+      "anni": "2019–presente",
+      "stagioni": 3,
+      "network_streaming": [
+        "Netflix"
+      ],
+      "episodio_piu_visto": "San Junipero (S03E04)",
+      "premi_principali_vinti": "9 Primetime Emmy Awards, 1 BAFTA",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "Ogni episodio è una storia indipendente. Charlie Brooker scrisse 'White Christmas' in sole 2 settimane durante le vacanze.",
+      "cast": [
+        "Cast variabile per episodio - Include: Jon Hamm",
+        "Bryce Dallas Howard",
+        "Daniel Kaluuya"
+      ]
+    },
+    {
+      "id": 12,
+      "titolo": "House of Cards",
+      "genere": [
+        "drama",
+        "thriller"
+      ],
+      "paese": "US",
+      "anni": "2013–2018",
+      "stagioni": 6,
+      "network_streaming": [
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Chapter 16: The Rescue (S02E08)",
+      "premi_principali_vinti": "7 Primetime Emmy Awards (tecnici)",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "Grogu (Baby Yoda) divenne virale in 24 ore. La serie usa la tecnologia StageCraft al posto dei green screen.",
+      "cast": [
+        "Pedro Pascal",
+        "Gina Carano",
+        "Carl Weathers",
+        "Giancarlo Esposito"
+      ]
+    },
+    {
+      "id": 13,
+      "titolo": "Better Call Saul",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2015–2022",
+      "stagioni": 6,
+      "network_streaming": [
+        "AMC",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Who Goes There (S01E04)",
+      "premi_principali_vinti": "5 Primetime Emmy Awards, 2 Golden Globe",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "McConaughey e Harrelson fecero audizioni insieme per creare chimica. L'inseguimento in un singolo take durò 6 minuti.",
+      "cast": [
+        "Matthew McConaughey",
+        "Woody Harrelson",
+        "Michelle Monaghan"
+      ]
+    },
+    {
+      "id": 14,
+      "titolo": "True Detective",
+      "genere": [
+        "crime",
+        "drama",
+        "thriller"
+      ],
+      "paese": "US",
+      "anni": "2014–presente",
+      "stagioni": 4,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "Morton's Fork (S01E10)",
+      "premi_principali_vinti": "15 Primetime Emmy Awards, 2 Golden Globe",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "Ispirato al film dei Coen Brothers. Ogni stagione è una storia nuova con cast diverso.",
+      "cast": [
+        "Billy Bob Thornton",
+        "Martin Freeman",
+        "Allison Tolman",
+        "Colin Hanks"
+      ]
+    },
+    {
+      "id": 15,
+      "titolo": "Westworld",
+      "genere": [
+        "fantascienza",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2016–2022",
+      "stagioni": 4,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "The Bicameral Mind (S01E10)",
+      "premi_principali_vinti": "9 Primetime Emmy Awards",
+      "fonte": "IMDb / Emmy Awards",
+      "curiosita": "La colonna sonora include versioni western di canzoni moderne. Il parco fu costruito fisicamente su 40 ettari in California.",
+      "cast": [
+        "Evan Rachel Wood",
+        "Jeffrey Wright",
+        "Thandie Newton",
+        "Ed Harris",
+        "Anthony Hopkins"
+      ]
+    },
+    {
+      "id": 16,
+      "titolo": "Lost",
+      "genere": [
+        "fantascienza",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2004–2010",
+      "stagioni": 6,
+      "network_streaming": [
+        "ABC",
+        "Disney+"
+      ],
+      "episodio_piu_visto": "Episode Finale (S06E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 17,
+      "titolo": "Mad Men",
+      "genere": [
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2007–2015",
+      "stagioni": 7,
+      "network_streaming": [
+        "AMC",
+        "Prime Video"
+      ],
+      "episodio_piu_visto": "Episode Finale (S07E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 18,
+      "titolo": "The Big Bang Theory",
+      "genere": [
+        "commedia"
+      ],
+      "paese": "US",
+      "anni": "2007–2019",
+      "stagioni": 12,
+      "network_streaming": [
+        "CBS",
+        "Max"
+      ],
+      "episodio_piu_visto": "Episode Finale (S012E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 19,
+      "titolo": "Sherlock",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "UK",
+      "anni": "2010–2017",
+      "stagioni": 4,
+      "network_streaming": [
+        "BBC",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Episode Finale (S04E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 20,
+      "titolo": "Black Mirror",
+      "genere": [
+        "fantascienza",
+        "thriller"
+      ],
+      "paese": "UK",
+      "anni": "2011–presente",
+      "stagioni": 6,
+      "network_streaming": [
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Episode Finale (S06E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 21,
+      "titolo": "Chernobyl",
+      "genere": [
+        "drama",
+        "storico"
+      ],
+      "paese": "US/UK",
+      "anni": "2019",
+      "stagioni": 1,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "Episode Finale (S01E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 22,
+      "titolo": "Narcos",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2015–2017",
+      "stagioni": 3,
+      "network_streaming": [
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Episode Finale (S03E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 23,
+      "titolo": "La Casa de Papel (Money Heist)",
+      "genere": [
+        "crime",
+        "thriller"
+      ],
+      "paese": "ES",
+      "anni": "2017–2021",
+      "stagioni": 5,
+      "network_streaming": [
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Episode Finale (S05E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 24,
+      "titolo": "The Boys",
+      "genere": [
+        "azione",
+        "supereroi"
+      ],
+      "paese": "US",
+      "anni": "2019–presente",
+      "stagioni": 4,
+      "network_streaming": [
+        "Prime Video"
+      ],
+      "episodio_piu_visto": "Episode Finale (S04E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 25,
+      "titolo": "Succession",
+      "genere": [
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2018–2023",
+      "stagioni": 4,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "Episode Finale (S04E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 26,
+      "titolo": "The Last of Us",
+      "genere": [
+        "drama",
+        "fantascienza"
+      ],
+      "paese": "US",
+      "anni": "2023–presente",
+      "stagioni": 1,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "Episode Finale (S01E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 27,
+      "titolo": "The Walking Dead",
+      "genere": [
+        "horror",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2010–2022",
+      "stagioni": 11,
+      "network_streaming": [
+        "AMC",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Episode Finale (S011E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 28,
+      "titolo": "Vikings",
+      "genere": [
+        "storico",
+        "drama"
+      ],
+      "paese": "CA/IE",
+      "anni": "2013–2020",
+      "stagioni": 6,
+      "network_streaming": [
+        "HISTORY",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Episode Finale (S06E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 29,
+      "titolo": "Peaky Blinders",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "UK",
+      "anni": "2013–2022",
+      "stagioni": 6,
+      "network_streaming": [
+        "BBC",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Episode Finale (S06E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 30,
+      "titolo": "Fargo",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2014–presente",
+      "stagioni": 5,
+      "network_streaming": [
+        "FX",
+        "Hulu"
+      ],
+      "episodio_piu_visto": "Episode Finale (S05E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 31,
+      "titolo": "Ozark",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2017–2022",
+      "stagioni": 4,
+      "network_streaming": [
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Episode Finale (S04E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 32,
+      "titolo": "The Handmaid's Tale",
+      "genere": [
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2017–presente",
+      "stagioni": 5,
+      "network_streaming": [
+        "Hulu",
+        "Prime Video"
+      ],
+      "episodio_piu_visto": "Episode Finale (S05E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 33,
+      "titolo": "Homeland",
+      "genere": [
+        "drama",
+        "thriller"
+      ],
+      "paese": "US",
+      "anni": "2011–2020",
+      "stagioni": 8,
+      "network_streaming": [
+        "Showtime",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Episode Finale (S08E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 34,
+      "titolo": "Mr. Robot",
+      "genere": [
+        "drama",
+        "thriller"
+      ],
+      "paese": "US",
+      "anni": "2015–2019",
+      "stagioni": 4,
+      "network_streaming": [
+        "USA Network",
+        "Prime Video"
+      ],
+      "episodio_piu_visto": "Episode Finale (S04E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 35,
+      "titolo": "Band of Brothers",
+      "genere": [
+        "guerra",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2001",
+      "stagioni": 1,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "Episode Finale (S01E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 36,
+      "titolo": "Rome",
+      "genere": [
+        "storico",
+        "drama"
+      ],
+      "paese": "US/UK",
+      "anni": "2005–2007",
+      "stagioni": 2,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "Episode Finale (S02E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 37,
+      "titolo": "Boardwalk Empire",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2010–2014",
+      "stagioni": 5,
+      "network_streaming": [
+        "HBO",
+        "Max"
+      ],
+      "episodio_piu_visto": "Episode Finale (S05E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 38,
+      "titolo": "Dexter",
+      "genere": [
+        "crime",
+        "drama"
+      ],
+      "paese": "US",
+      "anni": "2006–2013; 2021",
+      "stagioni": 9,
+      "network_streaming": [
+        "Showtime",
+        "Paramount+"
+      ],
+      "episodio_piu_visto": "Episode Finale (S09E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 39,
+      "titolo": "CSI: Crime Scene Investigation",
+      "genere": [
+        "crime",
+        "procedural"
+      ],
+      "paese": "US",
+      "anni": "2000–2015",
+      "stagioni": 15,
+      "network_streaming": [
+        "CBS",
+        "Paramount+"
+      ],
+      "episodio_piu_visto": "Episode Finale (S015E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 40,
+      "titolo": "ER",
+      "genere": [
+        "drama",
+        "medical"
+      ],
+      "paese": "US",
+      "anni": "1994–2009",
+      "stagioni": 15,
+      "network_streaming": [
+        "NBC",
+        "Hulu"
+      ],
+      "episodio_piu_visto": "Episode Finale (S015E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 41,
+      "titolo": "Grey's Anatomy",
+      "genere": [
+        "drama",
+        "medical"
+      ],
+      "paese": "US",
+      "anni": "2005–presente",
+      "stagioni": 20,
+      "network_streaming": [
+        "ABC",
+        "Disney+"
+      ],
+      "episodio_piu_visto": "Episode Finale (S020E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 42,
+      "titolo": "24",
+      "genere": [
+        "azione",
+        "thriller"
+      ],
+      "paese": "US",
+      "anni": "2001–2010; 2014",
+      "stagioni": 9,
+      "network_streaming": [
+        "FOX",
+        "Hulu"
+      ],
+      "episodio_piu_visto": "Episode Finale (S09E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 43,
+      "titolo": "Prison Break",
+      "genere": [
+        "azione",
+        "thriller"
+      ],
+      "paese": "US",
+      "anni": "2005–2009; 2017",
+      "stagioni": 5,
+      "network_streaming": [
+        "FOX",
+        "Hulu"
+      ],
+      "episodio_piu_visto": "Episode Finale (S05E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 44,
+      "titolo": "How I Met Your Mother",
+      "genere": [
+        "commedia"
+      ],
+      "paese": "US",
+      "anni": "2005–2014",
+      "stagioni": 9,
+      "network_streaming": [
+        "CBS",
+        "Disney+"
+      ],
+      "episodio_piu_visto": "Episode Finale (S09E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 45,
+      "titolo": "Modern Family",
+      "genere": [
+        "commedia"
+      ],
+      "paese": "US",
+      "anni": "2009–2020",
+      "stagioni": 11,
+      "network_streaming": [
+        "ABC",
+        "Disney+"
+      ],
+      "episodio_piu_visto": "Episode Finale (S011E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 46,
+      "titolo": "The Simpsons",
+      "genere": [
+        "animazione",
+        "commedia"
+      ],
+      "paese": "US",
+      "anni": "1989–presente",
+      "stagioni": 36,
+      "network_streaming": [
+        "FOX",
+        "Disney+"
+      ],
+      "episodio_piu_visto": "Episode Finale (S036E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 47,
+      "titolo": "South Park",
+      "genere": [
+        "animazione",
+        "commedia"
+      ],
+      "paese": "US",
+      "anni": "1997–presente",
+      "stagioni": 26,
+      "network_streaming": [
+        "Comedy Central",
+        "Paramount+"
+      ],
+      "episodio_piu_visto": "Episode Finale (S026E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 48,
+      "titolo": "Rick and Morty",
+      "genere": [
+        "animazione",
+        "fantascienza"
+      ],
+      "paese": "US",
+      "anni": "2013–presente",
+      "stagioni": 7,
+      "network_streaming": [
+        "Adult Swim",
+        "Max"
+      ],
+      "episodio_piu_visto": "Episode Finale (S07E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 49,
+      "titolo": "House M.D.",
+      "genere": [
+        "drama",
+        "medical"
+      ],
+      "paese": "US",
+      "anni": "2004–2012",
+      "stagioni": 8,
+      "network_streaming": [
+        "FOX",
+        "Prime Video"
+      ],
+      "episodio_piu_visto": "Episode Finale (S08E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    },
+    {
+      "id": 50,
+      "titolo": "Doctor Who",
+      "genere": [
+        "fantascienza",
+        "avventura"
+      ],
+      "paese": "UK",
+      "anni": "1963–1989; 2005–presente",
+      "stagioni": 39,
+      "network_streaming": [
+        "BBC",
+        "iPlayer"
+      ],
+      "episodio_piu_visto": "Episode Finale (S039E01)",
+      "premi_principali_vinti": "Varie nomination e premi televisivi",
+      "fonte": "IMDb",
+      "curiosita": "Serie televisiva acclamata dalla critica con un seguito di fan dedicato.",
+      "cast": [
+        "Cast di talento internazionale"
+      ]
+    }
+  ],
+  "anime": [
+    {
+      "id": 1,
+      "titolo": "Death Note",
+      "genere": [
+        "thriller",
+        "soprannaturale",
+        "mistero"
+      ],
+      "paese": "JP",
+      "anni": "2006–2007",
+      "stagioni": 1,
+      "network_streaming": [
+        "Nippon TV",
+        "Netflix",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Revival (Episodio 2)",
+      "premi_principali_vinti": "Tokyo Anime Award, Animation Kobe Award",
+      "fonte": "MyAnimeList / Crunchyroll",
+      "curiosita": "Basato sul manga di Tsugumi Ohba. La serie ha ispirato un movimento di fan che scrivevano nomi nei loro 'Death Note'. Vietato in Cina.",
+      "cast": [
+        "Voci: Mamoru Miyano (Light)",
+        "Kappei Yamaguchi (L)",
+        "Aya Hirano (Misa)"
+      ]
+    },
+    {
+      "id": 2,
+      "titolo": "Attack on Titan",
+      "genere": [
+        "azione",
+        "dark fantasy",
+        "post-apocalittico"
+      ],
+      "paese": "JP",
+      "anni": "2013–2023",
+      "stagioni": 4,
+      "network_streaming": [
+        "NHK",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Perfect Game (S03E17)",
+      "premi_principali_vinti": "Crunchyroll Anime Award (Anime of the Year), Newtype Anime Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "L'anime ha cambiato studio di animazione dopo la terza stagione. Il manga è terminato nel 2021 dopo 11 anni. Isao Yuki disse che fu ispirato da un ubriaco molesto.",
+      "cast": [
+        "Voci: Yuki Kaji (Eren)",
+        "Marina Inoue (Armin)",
+        "Yui Ishikawa (Mikasa)"
+      ]
+    },
+    {
+      "id": 3,
+      "titolo": "Fullmetal Alchemist: Brotherhood",
+      "genere": [
+        "avventura",
+        "fantasy",
+        "steampunk"
+      ],
+      "paese": "JP",
+      "anni": "2009–2010",
+      "stagioni": 1,
+      "network_streaming": [
+        "MBS",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Journey's End (Episodio 64)",
+      "premi_principali_vinti": "#1 su MyAnimeList per anni, Sugoi Japan Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Rifacimento più fedele al manga rispetto alla serie del 2003. Ha mantenuto il #1 su MyAnimeList per oltre un decennio. La serie è completa e non ha filler.",
+      "cast": [
+        "Voci: Romi Park (Edward)",
+        "Rie Kugimiya (Alphonse)",
+        "Megumi Takamoto (Winry)"
+      ]
+    },
+    {
+      "id": 4,
+      "titolo": "Steins;Gate",
+      "genere": [
+        "sci-fi",
+        "thriller",
+        "viaggio nel tempo"
+      ],
+      "paese": "JP",
+      "anni": "2011",
+      "stagioni": 1,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Missing Link (Episodio 12)",
+      "premi_principali_vinti": "Tokyo Anime Award, Newtype Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Basato su una visual novel. I primi episodi sembrano lenti ma costruiscono una storia complessa. Ha un sequel chiamato Steins;Gate 0.",
+      "cast": [
+        "Voci: Mamoru Miyano (Okabe)",
+        "Asami Imai (Kurisu)",
+        "Kana Hanazawa (Mayuri)"
+      ]
+    },
+    {
+      "id": 5,
+      "titolo": "Cowboy Bebop",
+      "genere": [
+        "sci-fi",
+        "western spaziale",
+        "noir"
+      ],
+      "paese": "JP",
+      "anni": "1998–1999",
+      "stagioni": 1,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The Real Folk Blues (Part 2) (Episodio 26)",
+      "premi_principali_vinti": "Seiun Award, Animation Kobe Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Considerato uno degli anime più influenti di sempre. La colonna sonora jazz di Yoko Kanno è iconica. Netflix ha creato un live-action nel 2021.",
+      "cast": [
+        "Voci: Koichi Yamadera (Spike)",
+        "Unsho Ishizuka (Jet)",
+        "Megumi Hayashibara (Faye)"
+      ]
+    },
+    {
+      "id": 6,
+      "titolo": "One Punch Man",
+      "genere": [
+        "azione",
+        "commedia",
+        "supereroi"
+      ],
+      "paese": "JP",
+      "anni": "2015–presente",
+      "stagioni": 2,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The Strongest Hero (S01E12)",
+      "premi_principali_vinti": "Sugoi Japan Award 2016",
+      "fonte": "MyAnimeList",
+      "curiosita": "Iniziò come webcomic amatoriale di ONE. Parodia i tropi degli anime shounen. La prima stagione è famosa per l'animazione eccezionale di Madhouse.",
+      "cast": [
+        "Voci: Makoto Furukawa (Saitama)",
+        "Kaito Ishikawa (Genos)",
+        "Yuichi Nakamura (License-less Rider)"
+      ]
+    },
+    {
+      "id": 7,
+      "titolo": "Demon Slayer",
+      "genere": [
+        "azione",
+        "dark fantasy",
+        "arti marziali"
+      ],
+      "paese": "JP",
+      "anni": "2019–presente",
+      "stagioni": 4,
+      "network_streaming": [
+        "Tokyo MX",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Hinokami (S01E19)",
+      "premi_principali_vinti": "Anime of the Year 2019 (Crunchyroll), Japan Expo Awards",
+      "fonte": "MyAnimeList",
+      "curiosita": "L'episodio 19 divenne virale per l'animazione straordinaria. Il film Mugen Train è il film anime con maggiori incassi di sempre. Prodotto da ufotable.",
+      "cast": [
+        "Voci: Natsuki Hanae (Tanjiro)",
+        "Akari Kito (Nezuko)",
+        "Hiro Shimono (Zenitsu)"
+      ]
+    },
+    {
+      "id": 8,
+      "titolo": "My Hero Academia",
+      "genere": [
+        "azione",
+        "supereroi",
+        "shounen"
+      ],
+      "paese": "JP",
+      "anni": "2016–presente",
+      "stagioni": 7,
+      "network_streaming": [
+        "Nippon TV",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "All Might (S01E12)",
+      "premi_principali_vinti": "Sugoi Japan Award 2017, Crunchyroll Awards",
+      "fonte": "MyAnimeList",
+      "curiosita": "Ha rivitalizzato il genere shounen negli anni 2010. Il creatore Kohei Horikoshi è un grande fan di Star Wars e dei supereroi Marvel.",
+      "cast": [
+        "Voci: Daiki Yamashita (Deku)",
+        "Kenta Miyake (All Might)",
+        "Nobuhiko Okamoto (Bakugo)"
+      ]
+    },
+    {
+      "id": 9,
+      "titolo": "Neon Genesis Evangelion",
+      "genere": [
+        "mecha",
+        "psicologico",
+        "apocalittico"
+      ],
+      "paese": "JP",
+      "anni": "1995–1996",
+      "stagioni": 1,
+      "network_streaming": [
+        "TV Tokyo",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The End of Evangelion (Film finale)",
+      "premi_principali_vinti": "Animage Anime Grand Prix, Excellence Prize",
+      "fonte": "MyAnimeList",
+      "curiosita": "Rivoluzionò il genere mecha con temi psicologici profondi. La depressione del regista Hideaki Anno influenzò gli ultimi episodi. Ha un finale controverso.",
+      "cast": [
+        "Voci: Megumi Ogata (Shinji)",
+        "Megumi Hayashibara (Rei)",
+        "Yuko Miyamura (Asuka)"
+      ]
+    },
+    {
+      "id": 10,
+      "titolo": "Code Geass",
+      "genere": [
+        "mecha",
+        "militare",
+        "thriller"
+      ],
+      "paese": "JP",
+      "anni": "2006–2008",
+      "stagioni": 2,
+      "network_streaming": [
+        "MBS",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Re; (S02E25)",
+      "premi_principali_vinti": "Tokyo Anime Award, Animage Anime Grand Prix",
+      "fonte": "MyAnimeList",
+      "curiosita": "Il protagonista Lelouch è uno degli anti-eroi più amati. La serie mescola mecha e strategia come Death Note. Ha ispirato numerosi spin-off.",
+      "cast": [
+        "Voci: Jun Fukuyama (Lelouch)",
+        "Takahiro Sakurai (Suzaku)",
+        "Yukana (C.C.)"
+      ]
+    },
+    {
+      "id": 11,
+      "titolo": "Mob Psycho 100",
+      "genere": [
+        "azione",
+        "commedia",
+        "soprannaturale"
+      ],
+      "paese": "JP",
+      "anni": "2016–2022",
+      "stagioni": 3,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Mob 1 ~Self-Proclaimed~ Psychic (Episodio 1)",
+      "premi_principali_vinti": "Crunchyroll Anime Award (Best Animation)",
+      "fonte": "MyAnimeList",
+      "curiosita": "Creato da ONE, lo stesso autore di One Punch Man. L'animazione di Studio Bones è altamente sperimentale e acclamata.",
+      "cast": [
+        "Voci: Setsuo Ito (Mob)",
+        "Takahiro Sakurai (Reigen)",
+        "Akio Otsuka (Dimple)"
+      ]
+    },
+    {
+      "id": 12,
+      "titolo": "Hunter x Hunter (2011)",
+      "genere": [
+        "avventura",
+        "fantasy",
+        "shounen"
+      ],
+      "paese": "JP",
+      "anni": "2011–2014",
+      "stagioni": 1,
+      "network_streaming": [
+        "Nippon TV",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Anger × And × Light (Episodio 131)",
+      "premi_principali_vinti": "Sugoi Japan Award, Tokyo Anime Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Rifacimento dell'anime del 1999 che copre più del manga. Il Chimera Ant Arc è considerato uno degli archi narrativi più profondi negli anime.",
+      "cast": [
+        "Voci: Megumi Han (Gon)",
+        "Mariya Ise (Killua)",
+        "Miyuki Sawashiro (Kurapika)"
+      ]
+    },
+    {
+      "id": 13,
+      "titolo": "Naruto",
+      "genere": [
+        "azione",
+        "avventura",
+        "ninja"
+      ],
+      "paese": "JP",
+      "anni": "2002–2017",
+      "stagioni": 9,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The Final Battle (Shippuden Episodio 477)",
+      "premi_principali_vinti": "Quiller Award, Animage's Anime Grand Prix",
+      "fonte": "MyAnimeList",
+      "curiosita": "Uno degli anime più influenti globalmente. Ha oltre 720 episodi totali tra Naruto e Shippuden. Il manga vendette oltre 250 milioni di copie.",
+      "cast": [
+        "Voci: Junko Takeuchi (Naruto)",
+        "Noriaki Sugiyama (Sasuke)",
+        "Chie Nakamura (Sakura)"
+      ]
+    },
+    {
+      "id": 14,
+      "titolo": "Sword Art Online",
+      "genere": [
+        "azione",
+        "avventura",
+        "fantasy",
+        "romantico"
+      ],
+      "paese": "JP",
+      "anni": "2012–presente",
+      "stagioni": 4,
+      "network_streaming": [
+        "Tokyo MX",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The World of the Guns (S02E14)",
+      "premi_principali_vinti": "Newtype Anime Award, Sugoi Japan Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Ha reso popolare il genere isekai moderno. Basato su light novel di Reki Kawahara. Ha generato numerosi spin-off e videogiochi.",
+      "cast": [
+        "Voci: Yoshitsugu Matsuoka (Kirito)",
+        "Haruka Tomatsu (Asuna)",
+        "Kanae Ito (Yui)"
+      ]
+    },
+    {
+      "id": 15,
+      "titolo": "Tokyo Ghoul",
+      "genere": [
+        "dark fantasy",
+        "horror",
+        "thriller"
+      ],
+      "paese": "JP",
+      "anni": "2014–2018",
+      "stagioni": 4,
+      "network_streaming": [
+        "Tokyo MX",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Tragedy (S01E12)",
+      "premi_principali_vinti": "Sugoi Japan Award 2015",
+      "fonte": "MyAnimeList",
+      "curiosita": "L'anime si discosta significativamente dal manga nelle stagioni successive. La mascherina di Kaneki è diventata iconica nella cultura pop.",
+      "cast": [
+        "Voci: Natsuki Hanae (Kaneki)",
+        "Sora Amamiya (Touka)",
+        "Shintaro Asanuma (Nishiki)"
+      ]
+    },
+    {
+      "id": 16,
+      "titolo": "Vinland Saga",
+      "genere": [
+        "azione",
+        "avventura",
+        "storico",
+        "seinen"
+      ],
+      "paese": "JP",
+      "anni": "2019–presente",
+      "stagioni": 2,
+      "network_streaming": [
+        "NHK",
+        "Netflix",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "A True Warrior (S01E24)",
+      "premi_principali_vinti": "Anime of the Year 2019 Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "Basato su eventi storici vichinghi. Studio WIT produsse la prima stagione con animazione eccezionale. La seconda stagione cambia completamente tono.",
+      "cast": [
+        "Voci: Yuto Uemura (Thorfinn)",
+        "Shunsuke Takeuchi (Thorkell)",
+        "Naoya Uchida (Askeladd)"
+      ]
+    },
+    {
+      "id": 17,
+      "titolo": "Made in Abyss",
+      "genere": [
+        "avventura",
+        "dark fantasy",
+        "mistero"
+      ],
+      "paese": "JP",
+      "anni": "2017–presente",
+      "stagioni": 2,
+      "network_streaming": [
+        "AT-X",
+        "Amazon Prime",
+        "Hidive"
+      ],
+      "episodio_piu_visto": "The Return (S01E13)",
+      "premi_principali_vinti": "Crunchyroll Award (Best Score)",
+      "fonte": "MyAnimeList",
+      "curiosita": "Contrasta uno stile artistico carino con contenuti estremamente dark. La colonna sonora di Kevin Penkin è pluripremiata. Ha film sequel.",
+      "cast": [
+        "Voci: Miyu Tomita (Riko)",
+        "Mariya Ise (Reg)",
+        "Shiori Izawa (Nanachi)"
+      ]
+    },
+    {
+      "id": 18,
+      "titolo": "Jujutsu Kaisen",
+      "genere": [
+        "azione",
+        "dark fantasy",
+        "shounen"
+      ],
+      "paese": "JP",
+      "anni": "2020–presente",
+      "stagioni": 2,
+      "network_streaming": [
+        "MBS",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Kyoto Sister School Exchange Event – Group Battle 3 (S01E19)",
+      "premi_principali_vinti": "Anime of the Year 2021 (Crunchyroll)",
+      "fonte": "MyAnimeList",
+      "curiosita": "MAPPA studio è famoso per l'animazione cinematica. Il film 0 incassò oltre 190 milioni di dollari. Gojo Satoru divenne un'icona virale.",
+      "cast": [
+        "Voci: Junya Enoki (Yuji)",
+        "Yuma Uchida (Megumi)",
+        "Asami Seto (Nobara)"
+      ]
+    },
+    {
+      "id": 19,
+      "titolo": "Spy x Family",
+      "genere": [
+        "azione",
+        "commedia",
+        "slice of life"
+      ],
+      "paese": "JP",
+      "anni": "2022–presente",
+      "stagioni": 2,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "The Prestigious School's Interview (S01E03)",
+      "premi_principali_vinti": "Anime of the Year 2022 (Crunchyroll)",
+      "fonte": "MyAnimeList",
+      "curiosita": "Il manga vendette milioni di copie prima dell'anime. Anya Forger divenne immediatamente virale. Mescola spy thriller con commedia familiare.",
+      "cast": [
+        "Voci: Takuya Eguchi (Loid)",
+        "Atsumi Tanezaki (Anya)",
+        "Saori Hayami (Yor)"
+      ]
+    },
+    {
+      "id": 20,
+      "titolo": "Chainsaw Man",
+      "genere": [
+        "azione",
+        "dark fantasy",
+        "horror"
+      ],
+      "paese": "JP",
+      "anni": "2022–presente",
+      "stagioni": 1,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "The Taste of a Kiss (Episodio 7)",
+      "premi_principali_vinti": "Anime of the Year 2022 Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "MAPPA animò ogni episodio come un mini-film. Ogni ending è diverso con band famose. Il manga ha venduto oltre 20 milioni di copie.",
+      "cast": [
+        "Voci: Kikunosuke Toya (Denji)",
+        "Tomori Kusunoki (Makima)",
+        "Shogo Sakata (Aki)"
+      ]
+    },
+    {
+      "id": 21,
+      "titolo": "Re:Zero - Starting Life in Another World",
+      "genere": [
+        "dark fantasy",
+        "thriller",
+        "isekai"
+      ],
+      "paese": "JP",
+      "anni": "2016–presente",
+      "stagioni": 2,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Return to the Capital (S01E18)",
+      "premi_principali_vinti": "Newtype Anime Award 2017",
+      "fonte": "MyAnimeList",
+      "curiosita": "Il protagonista Subaru muore ripetutamente, creando uno dei loop temporali più complessi negli anime. White Fox studio è famoso per l'adattamento fedele.",
+      "cast": [
+        "Voci: Yusuke Kobayashi (Subaru)",
+        "Rie Takahashi (Emilia)",
+        "Inori Minase (Rem)"
+      ]
+    },
+    {
+      "id": 22,
+      "titolo": "Berserk",
+      "genere": [
+        "azione",
+        "dark fantasy",
+        "horror"
+      ],
+      "paese": "JP",
+      "anni": "1997–1998, 2016–2017",
+      "stagioni": 2,
+      "network_streaming": [
+        "Nippon TV",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Eclipse (1997 Episodio 25)",
+      "premi_principali_vinti": "Cultural Affairs Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Il manga di Kentaro Miura è considerato un capolavoro. L'anime del 1997 è preferito dai fan. Miura morì nel 2021 lasciando la storia incompleta.",
+      "cast": [
+        "Voci: Hiroaki Iwanaga (Guts)",
+        "Toa Yukinari (Casca)",
+        "Takahiro Sakurai (Griffith)"
+      ]
+    },
+    {
+      "id": 23,
+      "titolo": "Violet Evergarden",
+      "genere": [
+        "drama",
+        "fantasy",
+        "slice of life"
+      ],
+      "paese": "JP",
+      "anni": "2018",
+      "stagioni": 1,
+      "network_streaming": [
+        "ABC",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Loved Ones Will Always Watch Over You (Episodio 10)",
+      "premi_principali_vinti": "Crunchyroll Award (Best Animation)",
+      "fonte": "MyAnimeList",
+      "curiosita": "Kyoto Animation è famosa per l'animazione straordinariamente dettagliata. Ogni episodio è visivamente uno dei migliori nell'industria. Ha film sequel.",
+      "cast": [
+        "Voci: Yui Ishikawa (Violet)",
+        "Daisuke Namikawa (Gilbert)",
+        "Takehito Koyasu (Claudia)"
+      ]
+    },
+    {
+      "id": 24,
+      "titolo": "Your Lie in April",
+      "genere": [
+        "drama",
+        "musica",
+        "romantico"
+      ],
+      "paese": "JP",
+      "anni": "2014–2015",
+      "stagioni": 1,
+      "network_streaming": [
+        "Fuji TV",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Friend A (Episodio 22)",
+      "premi_principali_vinti": "Tokyo Anime Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Le performance musicali sono suonate da veri pianisti professionisti. La serie ha fatto piangere milioni di spettatori. Basato su manga shounen insolito.",
+      "cast": [
+        "Voci: Natsuki Hanae (Kosei)",
+        "Risa Taneda (Kaori)",
+        "Ayane Sakura (Tsubaki)"
+      ]
+    },
+    {
+      "id": 25,
+      "titolo": "Haikyuu!!",
+      "genere": [
+        "sport",
+        "commedia",
+        "shounen"
+      ],
+      "paese": "JP",
+      "anni": "2014–2020",
+      "stagioni": 4,
+      "network_streaming": [
+        "MBS",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The Battle Without Will Power (S02E24)",
+      "premi_principali_vinti": "Sugoi Japan Award, Tokyo Anime Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Ha rivitalizzato il genere degli anime sportivi. Le partite di volley sono animate con incredibile dinamismo. Il manga si è concluso nel 2020.",
+      "cast": [
+        "Voci: Ayumu Murase (Hinata)",
+        "Kaito Ishikawa (Kageyama)",
+        "Koki Uchiyama (Tsukishima)"
+      ]
+    },
+    {
+      "id": 26,
+      "titolo": "Bleach",
+      "genere": [
+        "azione",
+        "avventura",
+        "soprannaturale"
+      ],
+      "paese": "JP",
+      "anni": "2004–2012, 2022–presente",
+      "stagioni": 16,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll",
+        "Hulu"
+      ],
+      "episodio_piu_visto": "Conclusion of the Death Match (Episodio 309)",
+      "premi_principali_vinti": "Shogakukan Manga Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Ritornò nel 2022 dopo 10 anni per adattare l'arco finale. Ha oltre 366 episodi. Famoso per le battaglie spada e le trasformazioni Bankai.",
+      "cast": [
+        "Voci: Masakazu Morita (Ichigo)",
+        "Fumiko Orikasa (Rukia)",
+        "Kentaro Ito (Renji)"
+      ]
+    },
+    {
+      "id": 27,
+      "titolo": "Dragon Ball Z",
+      "genere": [
+        "azione",
+        "avventura",
+        "shounen",
+        "arti marziali"
+      ],
+      "paese": "JP",
+      "anni": "1989–1996",
+      "stagioni": 9,
+      "network_streaming": [
+        "Fuji TV",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Goku's Angry Cry (Episodio 95)",
+      "premi_principali_vinti": "Animage Anime Grand Prix (multipli)",
+      "fonte": "MyAnimeList",
+      "curiosita": "Uno degli anime più influenti di sempre. Ha reso popolare gli anime in Occidente. Goku è una delle icone più riconoscibili al mondo.",
+      "cast": [
+        "Voci: Masako Nozawa (Goku)",
+        "Ryo Horikawa (Vegeta)",
+        "Mayumi Tanaka (Krillin)"
+      ]
+    },
+    {
+      "id": 28,
+      "titolo": "One Piece",
+      "genere": [
+        "avventura",
+        "azione",
+        "fantasy",
+        "shounen"
+      ],
+      "paese": "JP",
+      "anni": "1999–presente",
+      "stagioni": 21,
+      "network_streaming": [
+        "Fuji TV",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "I'm Luffy! The Man Who Will Become the Pirate King! (Episodio 1)",
+      "premi_principali_vinti": "Guinness World Record (manga più venduto)",
+      "fonte": "MyAnimeList",
+      "curiosita": "Oltre 1100 episodi e ancora in corso. Il manga ha venduto oltre 500 milioni di copie. Netflix ha creato un live-action nel 2023.",
+      "cast": [
+        "Voci: Mayumi Tanaka (Luffy)",
+        "Kazuya Nakai (Zoro)",
+        "Akemi Okamura (Nami)"
+      ]
+    },
+    {
+      "id": 29,
+      "titolo": "Fate/Zero",
+      "genere": [
+        "azione",
+        "fantasy",
+        "soprannaturale"
+      ],
+      "paese": "JP",
+      "anni": "2011–2012",
+      "stagioni": 2,
+      "network_streaming": [
+        "Tokyo MX",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The Eighth Contract (S01E13)",
+      "premi_principali_vinti": "Newtype Anime Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Prequel di Fate/stay night. Ufotable è famoso per le scene di combattimento spettacolari. Parte del vasto universo Type-Moon.",
+      "cast": [
+        "Voci: Ayako Kawasumi (Saber)",
+        "Rikiya Koyama (Kiritsugu)",
+        "Akio Otsuka (Rider)"
+      ]
+    },
+    {
+      "id": 30,
+      "titolo": "Psycho-Pass",
+      "genere": [
+        "thriller",
+        "cyberpunk",
+        "psicologico"
+      ],
+      "paese": "JP",
+      "anni": "2012–2019",
+      "stagioni": 3,
+      "network_streaming": [
+        "Fuji TV",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Psycho-Pass (S01E22)",
+      "premi_principali_vinti": "Newtype Anime Award 2013",
+      "fonte": "MyAnimeList",
+      "curiosita": "Scritto da Gen Urobuchi (Madoka Magica). Esplora temi distopici e filosofici. Production I.G studio è famoso per sci-fi mature.",
+      "cast": [
+        "Voci: Kana Hanazawa (Akane)",
+        "Tomokazu Seki (Kogami)",
+        "Noriko Hidaka (Shion)"
+      ]
+    },
+    {
+      "id": 31,
+      "titolo": "Puella Magi Madoka Magica",
+      "genere": [
+        "drama",
+        "psicologico",
+        "dark fantasy",
+        "magical girl"
+      ],
+      "paese": "JP",
+      "anni": "2011",
+      "stagioni": 1,
+      "network_streaming": [
+        "MBS",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "I'm Not Afraid of Anything Anymore (Episodio 3)",
+      "premi_principali_vinti": "Tokyo Anime Award, Sugoi Japan Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Rivoluzionò il genere magical girl con toni dark. L'episodio 3 shockò il mondo. Scritto da Gen Urobuchi, animato da Shaft.",
+      "cast": [
+        "Voci: Aoi Yuki (Madoka)",
+        "Chiwa Saito (Homura)",
+        "Eri Kitamura (Sayaka)"
+      ]
+    },
+    {
+      "id": 32,
+      "titolo": "Parasyte: The Maxim",
+      "genere": [
+        "azione",
+        "horror",
+        "sci-fi",
+        "psicologico"
+      ],
+      "paese": "JP",
+      "anni": "2014–2015",
+      "stagioni": 1,
+      "network_streaming": [
+        "Nippon TV",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "The Sun Also Rises (Episodio 24)",
+      "premi_principali_vinti": "Tokyo Anime Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Basato su manga degli anni '90. Madhouse produsse un adattamento fedele e teso. La colonna sonora dubstep di Ken Arai è unica.",
+      "cast": [
+        "Voci: Nobunaga Shimazaki (Shinichi)",
+        "Aya Hirano (Migi)",
+        "Kana Hanazawa (Murano)"
+      ]
+    },
+    {
+      "id": 33,
+      "titolo": "The Promised Neverland",
+      "genere": [
+        "mistero",
+        "thriller",
+        "dark fantasy"
+      ],
+      "paese": "JP",
+      "anni": "2019–2021",
+      "stagioni": 2,
+      "network_streaming": [
+        "Fuji TV",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "121045 (S01E01)",
+      "premi_principali_vinti": "Crunchyroll Award Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "La prima stagione fu acclamata. La seconda stagione deviò dal manga causando controversie. Il manga originale è molto più oscuro.",
+      "cast": [
+        "Voci: Sumire Morohoshi (Emma)",
+        "Mariya Ise (Ray)",
+        "Maaya Uchida (Norman)"
+      ]
+    },
+    {
+      "id": 34,
+      "titolo": "Erased",
+      "genere": [
+        "mistero",
+        "psicologico",
+        "soprannaturale",
+        "thriller"
+      ],
+      "paese": "JP",
+      "anni": "2016",
+      "stagioni": 1,
+      "network_streaming": [
+        "Fuji TV",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Flashing Before My Eyes (Episodio 1)",
+      "premi_principali_vinti": "Sugoi Japan Award Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "Un thriller sul viaggio nel tempo che tenne gli spettatori con il fiato sospeso. L'ending fu controverso tra i fan. A-1 Pictures produsse l'adattamento.",
+      "cast": [
+        "Voci: Shinnosuke Mitsushima (Satoru adulto)",
+        "Tao Tsuchiya (Kayo)",
+        "Minami Takayama (Satoru bambino)"
+      ]
+    },
+    {
+      "id": 35,
+      "titolo": "Assassination Classroom",
+      "genere": [
+        "azione",
+        "commedia",
+        "shounen"
+      ],
+      "paese": "JP",
+      "anni": "2015–2016",
+      "stagioni": 2,
+      "network_streaming": [
+        "Fuji TV",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Graduation Time (S02E25)",
+      "premi_principali_vinti": "Sugoi Japan Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Mescola commedia con momenti emozionanti. Koro-sensei divenne un'icona amata. Il manga vendette oltre 25 milioni di copie.",
+      "cast": [
+        "Voci: Jun Fukuyama (Koro-sensei)",
+        "Mai Fuchigami (Nagisa)",
+        "Nobuhiko Okamoto (Karma)"
+      ]
+    },
+    {
+      "id": 36,
+      "titolo": "Mushoku Tensei: Jobless Reincarnation",
+      "genere": [
+        "avventura",
+        "drama",
+        "fantasy",
+        "isekai"
+      ],
+      "paese": "JP",
+      "anni": "2021–presente",
+      "stagioni": 2,
+      "network_streaming": [
+        "Tokyo MX",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Turning Point 1 (S01E08)",
+      "premi_principali_vinti": "Crunchyroll Award (Best Animation)",
+      "fonte": "MyAnimeList",
+      "curiosita": "Considerato il padre del genere isekai moderno. Studio Bind fu fondato specificamente per questo anime. L'animazione è cinematica.",
+      "cast": [
+        "Voci: Yumi Uchiyama (Rudeus)",
+        "Ai Kayano (Sylphiette)",
+        "Hisako Kanemoto (Eris)"
+      ]
+    },
+    {
+      "id": 37,
+      "titolo": "Toradora!",
+      "genere": [
+        "commedia",
+        "romantico",
+        "slice of life"
+      ],
+      "paese": "JP",
+      "anni": "2008–2009",
+      "stagioni": 1,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Confession (Episodio 25)",
+      "premi_principali_vinti": "Tokyo Anime Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Uno dei migliori romance anime mai realizzati. Taiga Aisaka è un'icona tsundere. J.C.Staff produsse un adattamento fedele.",
+      "cast": [
+        "Voci: Rie Kugimiya (Taiga)",
+        "Junji Majima (Ryuji)",
+        "Yui Horie (Minori)"
+      ]
+    },
+    {
+      "id": 38,
+      "titolo": "Clannad: After Story",
+      "genere": [
+        "drama",
+        "romantico",
+        "slice of life",
+        "soprannaturale"
+      ],
+      "paese": "JP",
+      "anni": "2008–2009",
+      "stagioni": 1,
+      "network_streaming": [
+        "TBS",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "White Darkness (Episodio 16)",
+      "premi_principali_vinti": "Tokyo Anime Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Considerato uno degli anime più emozionanti mai realizzati. Kyoto Animation è famosa per After Story. Molti fan piangono durante la visione.",
+      "cast": [
+        "Voci: Yuichi Nakamura (Tomoya)",
+        "Mai Nakahara (Nagisa)",
+        "Ryotaro Okiayu (Akio)"
+      ]
+    },
+    {
+      "id": 39,
+      "titolo": "Overlord",
+      "genere": [
+        "azione",
+        "avventura",
+        "fantasy",
+        "isekai"
+      ],
+      "paese": "JP",
+      "anni": "2015–presente",
+      "stagioni": 4,
+      "network_streaming": [
+        "AT-X",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "The End and the Beginning (S01E13)",
+      "premi_principali_vinti": "Sugoi Japan Award Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "Il protagonista è un villain anti-eroe. Ainz Ooal Gown divenne popolare per il suo carisma. Madhouse animò le prime tre stagioni.",
+      "cast": [
+        "Voci: Satoshi Hino (Ainz)",
+        "Yumi Hara (Albedo)",
+        "Sumire Uesaka (Shalltear)"
+      ]
+    },
+    {
+      "id": 40,
+      "titolo": "No Game No Life",
+      "genere": [
+        "avventura",
+        "commedia",
+        "fantasy",
+        "isekai"
+      ],
+      "paese": "JP",
+      "anni": "2014",
+      "stagioni": 1,
+      "network_streaming": [
+        "AT-X",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Sacrifice (Episodio 12)",
+      "premi_principali_vinti": "Sugoi Japan Award Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "Famoso per i colori vibranti e saturi. Basato su giochi e strategia. I fan aspettano una seconda stagione da 10 anni.",
+      "cast": [
+        "Voci: Yoshitsugu Matsuoka (Sora)",
+        "Ai Kayano (Shiro)",
+        "Yoko Hikasa (Stephanie)"
+      ]
+    },
+    {
+      "id": 41,
+      "titolo": "Samurai Champloo",
+      "genere": [
+        "azione",
+        "avventura",
+        "storico",
+        "samurai"
+      ],
+      "paese": "JP",
+      "anni": "2004–2005",
+      "stagioni": 1,
+      "network_streaming": [
+        "Fuji TV",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Evanescent Encounter (Part 3) (Episodio 26)",
+      "premi_principali_vinti": "Tokyo Anime Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Mescola samurai con hip-hop. Diretto da Shinichiro Watanabe (Cowboy Bebop). La colonna sonora di Nujabes è leggendaria.",
+      "cast": [
+        "Voci: Kazuya Nakai (Mugen)",
+        "Ginpei Sato (Jin)",
+        "Ayako Kawasumi (Fuu)"
+      ]
+    },
+    {
+      "id": 42,
+      "titolo": "Trigun",
+      "genere": [
+        "azione",
+        "avventura",
+        "commedia",
+        "sci-fi western"
+      ],
+      "paese": "JP",
+      "anni": "1998",
+      "stagioni": 1,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Under the Sky So Blue (Episodio 26)",
+      "premi_principali_vinti": "Seiun Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Un western spaziale classico. Vash the Stampede è un pacifista iconico. Remake Trigun Stampede uscì nel 2023.",
+      "cast": [
+        "Voci: Masaya Onosaka (Vash)",
+        "Hiromi Tsuru (Meryl)",
+        "Satsuki Yukino (Milly)"
+      ]
+    },
+    {
+      "id": 43,
+      "titolo": "Gurren Lagann",
+      "genere": [
+        "azione",
+        "mecha",
+        "sci-fi"
+      ],
+      "paese": "JP",
+      "anni": "2007",
+      "stagioni": 1,
+      "network_streaming": [
+        "TV Tokyo",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "The Lights in the Sky are Stars (Episodio 27)",
+      "premi_principali_vinti": "Tokyo Anime Award, Animage's Anime Grand Prix",
+      "fonte": "MyAnimeList",
+      "curiosita": "Famoso per essere over-the-top e ispirante. 'Row Row Fight the Power' divenne un meme. Gainax creò un mecha epico.",
+      "cast": [
+        "Voci: Tetsuya Kakihara (Simon)",
+        "Katsuyuki Konishi (Kamina)",
+        "Marina Inoue (Yoko)"
+      ]
+    },
+    {
+      "id": 44,
+      "titolo": "Kill la Kill",
+      "genere": [
+        "azione",
+        "commedia",
+        "ecchi"
+      ],
+      "paese": "JP",
+      "anni": "2013–2014",
+      "stagioni": 1,
+      "network_streaming": [
+        "MBS",
+        "Crunchyroll",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Past the Infinite Darkness (Episodio 24)",
+      "premi_principali_vinti": "Crunchyroll Award (Best Fight Scene)",
+      "fonte": "MyAnimeList",
+      "curiosita": "Studio Trigger debuttò con questo anime. Estremamente stilizzato e energico. La colonna sonora di Hiroyuki Sawano è epica.",
+      "cast": [
+        "Voci: Ami Koshimizu (Ryuko)",
+        "Ryoka Yuzuki (Satsuki)",
+        "Aya Suzaki (Mako)"
+      ]
+    },
+    {
+      "id": 45,
+      "titolo": "Food Wars!",
+      "genere": [
+        "commedia",
+        "ecchi",
+        "shounen"
+      ],
+      "paese": "JP",
+      "anni": "2015–2020",
+      "stagioni": 5,
+      "network_streaming": [
+        "MBS",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "The Magician from the East (S01E02)",
+      "premi_principali_vinti": "Sugoi Japan Award Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "Anime culinario con reazioni esagerate. Le ricette mostrate sono reali. J.C.Staff animò le prime quattro stagioni.",
+      "cast": [
+        "Voci: Yoshitsugu Matsuoka (Soma)",
+        "Ai Kayano (Ryoko)",
+        "Maaya Uchida (Yuki)"
+      ]
+    },
+    {
+      "id": 46,
+      "titolo": "Dr. Stone",
+      "genere": [
+        "avventura",
+        "commedia",
+        "sci-fi"
+      ],
+      "paese": "JP",
+      "anni": "2019–presente",
+      "stagioni": 3,
+      "network_streaming": [
+        "Tokyo MX",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Stone World: The Beginning (S01E01)",
+      "premi_principali_vinti": "Crunchyroll Award Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "Educativo sulla scienza reale. Senku Ishigami rende la scienza cool. La serie ha consulenti scientifici reali.",
+      "cast": [
+        "Voci: Yusuke Kobayashi (Senku)",
+        "Manami Numakura (Kohaku)",
+        "Gen Sato (Chrome)"
+      ]
+    },
+    {
+      "id": 47,
+      "titolo": "The Rising of the Shield Hero",
+      "genere": [
+        "azione",
+        "avventura",
+        "drama",
+        "fantasy",
+        "isekai"
+      ],
+      "paese": "JP",
+      "anni": "2019–presente",
+      "stagioni": 3,
+      "network_streaming": [
+        "AT-X",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "The Shield Hero (S01E01)",
+      "premi_principali_vinti": "Crunchyroll Award Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "Protagonista inizia tradito e disprezzato. Naofumi e Raphtalia hanno una relazione unica. Kinema Citrus produsse l'anime.",
+      "cast": [
+        "Voci: Kaito Ishikawa (Naofumi)",
+        "Asami Seto (Raphtalia)",
+        "Rina Hidaka (Filo)"
+      ]
+    },
+    {
+      "id": 48,
+      "titolo": "The Disastrous Life of Saiki K.",
+      "genere": [
+        "commedia",
+        "soprannaturale",
+        "slice of life"
+      ],
+      "paese": "JP",
+      "anni": "2016–2018",
+      "stagioni": 3,
+      "network_streaming": [
+        "TV Tokyo",
+        "Netflix"
+      ],
+      "episodio_piu_visto": "Disaster of  Love (S01E01)",
+      "premi_principali_vinti": "Tokyo Anime Award Nomination",
+      "fonte": "MyAnimeList",
+      "curiosita": "Commedia con timing perfetto. Saiki ha poteri psichici ma vuole una vita normale. Episodi brevi da 5 minuti ciascuno.",
+      "cast": [
+        "Voci: Hiroshi Kamiya (Saiki)",
+        "Nobunaga Shimazaki (Kaidou)",
+        "Ai Kayano (Kokomi)"
+      ]
+    },
+    {
+      "id": 49,
+      "titolo": "Kaguya-sama: Love is War",
+      "genere": [
+        "commedia",
+        "romantico",
+        "psicologico"
+      ],
+      "paese": "JP",
+      "anni": "2019–2022",
+      "stagioni": 3,
+      "network_streaming": [
+        "Tokyo MX",
+        "Crunchyroll",
+        "Funimation"
+      ],
+      "episodio_piu_visto": "Ultra Romantic (S03E13)",
+      "premi_principali_vinti": "Crunchyroll Anime Award (Best Comedy, 2019, 2020)",
+      "fonte": "MyAnimeList",
+      "curiosita": "Rom-com con battaglie psicologiche. Kaguya e Miyuki sono troppo orgogliosi per confessare. A-1 Pictures creò un adattamento eccellente.",
+      "cast": [
+        "Voci: Aoi Koga (Kaguya)",
+        "Makoto Furukawa (Miyuki)",
+        "Konomi Kohara (Chika)"
+      ]
+    },
+    {
+      "id": 50,
+      "titolo": "March Comes in Like a Lion",
+      "genere": [
+        "drama",
+        "slice of life",
+        "shounen"
+      ],
+      "paese": "JP",
+      "anni": "2016–2018",
+      "stagioni": 2,
+      "network_streaming": [
+        "NHK",
+        "Crunchyroll"
+      ],
+      "episodio_piu_visto": "Chapter 62 Burnt Field (S02E11)",
+      "premi_principali_vinti": "Tokyo Anime Award, Excellence Award",
+      "fonte": "MyAnimeList",
+      "curiosita": "Tratta temi di depressione e solitudine. Basato su shogi (scacchi giapponesi). Shaft creò uno degli anime più emozionali.",
+      "cast": [
+        "Voci: Kengo Kawanishi (Rei)",
+        "Ai Kayano (Akari)",
+        "Kana Hanazawa (Hinata)"
+      ]
+    }
+  ],
+  "bands": [
+    {
+      "id": 1,
+      "band": "The Beatles",
+      "genere": [
+        "rock",
+        "pop"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1960–1970",
+      "componenti": [
+        "John Lennon",
+        "Paul McCartney",
+        "George Harrison",
+        "Ringo Starr"
+      ],
+      "etichette": [
+        "Parlophone",
+        "Capitol",
+        "Apple"
+      ],
+      "discografia": null,
+      "numero_album_pubblicati": 13,
+      "premi_principali_vinti": "7 Grammy Awards, 15 Ivor Novello Awards",
+      "curiosita": "Considerati la band più influente di tutti i tempi",
+      "fonte": "Wikipedia / Grammy Awards"
+    },
+    {
+      "id": 2,
+      "band": "The Rolling Stones",
+      "genere": [
+        "rock",
+        "blues rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1962–presente",
+      "componenti": [
+        "Mick Jagger",
+        "Keith Richards",
+        "Ronnie Wood",
+        "Charlie Watts (†)"
+      ],
+      "etichette": [
+        "Decca",
+        "Rolling Stones Records",
+        "Virgin"
+      ],
+      "discografia": null,
+      "numero_album_pubblicati": 30,
+      "premi_principali_vinti": "3 Grammy Awards, Grammy Lifetime Achievement Award",
+      "curiosita": "Una delle band rock più longeve e di successo",
+      "fonte": "Wikipedia / Grammy Awards"
+    },
+    {
+      "id": 3,
+      "band": "Led Zeppelin",
+      "genere": [
+        "hard rock",
+        "blues rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1968–1980; 2007",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 4,
+      "band": "Pink Floyd",
+      "genere": [
+        "progressive rock",
+        "psychedelic rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1965–2014",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 5,
+      "band": "Queen",
+      "genere": [
+        "rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1970–presente",
+      "componenti": [
+        "Freddie Mercury (†)",
+        "Brian May",
+        "Roger Taylor",
+        "John Deacon"
+      ],
+      "etichette": [
+        "EMI",
+        "Parlophone",
+        "Hollywood"
+      ],
+      "discografia": null,
+      "numero_album_pubblicati": 15,
+      "premi_principali_vinti": "4 Brit Awards, Grammy Lifetime Achievement Award",
+      "curiosita": "Bohemian Rhapsody è considerata una delle canzoni più iconiche della storia",
+      "fonte": "Wikipedia / Brit Awards"
+    },
+    {
+      "id": 6,
+      "band": "AC/DC",
+      "genere": [
+        "hard rock"
+      ],
+      "paese_origine": "Australia",
+      "periodo_attivita": "1973–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 7,
+      "band": "Metallica",
+      "genere": [
+        "heavy metal",
+        "thrash metal"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1981–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 8,
+      "band": "Iron Maiden",
+      "genere": [
+        "heavy metal"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1975–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 9,
+      "band": "Black Sabbath",
+      "genere": [
+        "heavy metal"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1968–2017",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 10,
+      "band": "Deep Purple",
+      "genere": [
+        "hard rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1968–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 11,
+      "band": "The Who",
+      "genere": [
+        "rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1964–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 12,
+      "band": "The Doors",
+      "genere": [
+        "rock",
+        "psychedelic rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1965–1973",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 13,
+      "band": "Eagles",
+      "genere": [
+        "rock",
+        "country rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1971–1980; 1994–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 14,
+      "band": "Fleetwood Mac",
+      "genere": [
+        "rock",
+        "pop rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1967–2018",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 15,
+      "band": "Aerosmith",
+      "genere": [
+        "hard rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1970–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 16,
+      "band": "Guns N' Roses",
+      "genere": [
+        "hard rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1985–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 17,
+      "band": "Bon Jovi",
+      "genere": [
+        "rock",
+        "hard rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1983–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 18,
+      "band": "U2",
+      "genere": [
+        "rock",
+        "alternative"
+      ],
+      "paese_origine": "Ireland",
+      "periodo_attivita": "1976–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 19,
+      "band": "The Police",
+      "genere": [
+        "rock",
+        "new wave"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1977–1986; 2007–2008",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 20,
+      "band": "Depeche Mode",
+      "genere": [
+        "electronic",
+        "synth-pop"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1980–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 21,
+      "band": "The Cure",
+      "genere": [
+        "post-punk",
+        "gothic rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1978–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 22,
+      "band": "Joy Division",
+      "genere": [
+        "post-punk"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1976–1980",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 23,
+      "band": "The Smiths",
+      "genere": [
+        "indie rock",
+        "alternative"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1982–1987",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 24,
+      "band": "R.E.M.",
+      "genere": [
+        "alternative"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1980–2011",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 25,
+      "band": "Talking Heads",
+      "genere": [
+        "new wave",
+        "art rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1975–1991",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 26,
+      "band": "Radiohead",
+      "genere": [
+        "alternative",
+        "art rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1985–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 27,
+      "band": "Coldplay",
+      "genere": [
+        "alternative",
+        "pop rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1997–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 28,
+      "band": "Oasis",
+      "genere": [
+        "britpop",
+        "rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1991–2009",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 29,
+      "band": "Blur",
+      "genere": [
+        "britpop",
+        "alternative"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1988–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 30,
+      "band": "Arctic Monkeys",
+      "genere": [
+        "indie rock",
+        "alternative"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "2002–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 31,
+      "band": "Nirvana",
+      "genere": [
+        "grunge",
+        "alternative"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1987–1994",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 32,
+      "band": "Pearl Jam",
+      "genere": [
+        "grunge",
+        "alternative"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1990–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 33,
+      "band": "Soundgarden",
+      "genere": [
+        "grunge",
+        "alternative"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1984–1997; 2010–2019",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 34,
+      "band": "Red Hot Chili Peppers",
+      "genere": [
+        "alternative",
+        "funk rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1983–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 35,
+      "band": "Green Day",
+      "genere": [
+        "punk rock",
+        "pop punk"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1987–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 36,
+      "band": "Ramones",
+      "genere": [
+        "punk rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1974–1996",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 37,
+      "band": "Sex Pistols",
+      "genere": [
+        "punk rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1975–1978; 1996; 2002–2003; 2007–2008",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 38,
+      "band": "The Clash",
+      "genere": [
+        "punk rock",
+        "post-punk"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1976–1986",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 39,
+      "band": "Rage Against the Machine",
+      "genere": [
+        "rap rock",
+        "alternative"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1991–2000; 2007–2011; 2019–2023",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 40,
+      "band": "System of a Down",
+      "genere": [
+        "alternative",
+        "metal"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1994–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 41,
+      "band": "Korn",
+      "genere": [
+        "nu metal"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1993–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 42,
+      "band": "Foo Fighters",
+      "genere": [
+        "alternative",
+        "rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1994–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 43,
+      "band": "Muse",
+      "genere": [
+        "alternative",
+        "progressive"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1994–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 44,
+      "band": "Linkin Park",
+      "genere": [
+        "alternative",
+        "nu metal"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1996–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 45,
+      "band": "The Kinks",
+      "genere": [
+        "rock"
+      ],
+      "paese_origine": "UK",
+      "periodo_attivita": "1963–1996",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 46,
+      "band": "ABBA",
+      "genere": [
+        "pop"
+      ],
+      "paese_origine": "Sweden",
+      "periodo_attivita": "1972–1982; 2016–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 47,
+      "band": "Bee Gees",
+      "genere": [
+        "pop",
+        "disco"
+      ],
+      "paese_origine": "UK/Australia",
+      "periodo_attivita": "1958–2003",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 48,
+      "band": "The Smashing Pumpkins",
+      "genere": [
+        "alternative",
+        "rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1988–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 49,
+      "band": "The Strokes",
+      "genere": [
+        "indie rock",
+        "garage rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "1998–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    },
+    {
+      "id": 50,
+      "band": "Imagine Dragons",
+      "genere": [
+        "alternative",
+        "pop rock"
+      ],
+      "paese_origine": "US",
+      "periodo_attivita": "2008–presente",
+      "componenti": [],
+      "etichette": null,
+      "discografia": null,
+      "numero_album_pubblicati": null,
+      "premi_principali_vinti": null,
+      "curiosita": null,
+      "fonte": null
+    }
+  ]
+}

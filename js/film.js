@@ -21,15 +21,11 @@ async function cercaFilm() {
     }
 
     try {
-        const risposta = await fetch(`http://localhost:3000/search?q=${encodeURIComponent(query)}`);
+        const risposta = await fetch(`http://localhost:3000/movies?titolo_like=${encodeURIComponent(query)}`);
         if (!risposta.ok) throw new Error('Errore nella ricerca');
 
-        const data = await risposta.json();
-        if (data.results && data.results.movies && Array.isArray(data.results.movies)) {
-            currentFilmsData = data.results.movies.filter(s => s.titolo.toLowerCase().includes(query.toLowerCase()));
-            renderFilteredFilms();
-        }
-
+        currentFilmsData = await risposta.json();
+        renderFilteredFilms();
     } catch (error) {
         console.error(error);
     }
@@ -92,6 +88,9 @@ function creaCardFilm(file) {
     btn.onclick = () => apriDettagli(file);
     overlay.appendChild(btn);
 
+    const favBtn = createFavoriteButton(file, 'film');
+    card.appendChild(favBtn);
+
     card.appendChild(overlay);
 
     return card;
@@ -122,5 +121,16 @@ function apriDettagli(file) {
     modal.style.display = 'flex';
 }
 
-window.onload = loadFilms;
+window.onload = () => {
+    loadFilms();
+
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                cercaFilm();
+            }
+        });
+    }
+};
 

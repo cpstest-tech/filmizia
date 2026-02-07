@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel - Filmizia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/upload.js" defer></script>
+</head>
+
+<body class="upload-page">
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-card">
+            <h2>ACCESSO LIMITATO</h2>
+            <p>Inserisci il codice di autorizzazione per sbloccare il sistema.</p>
+            <div class="password-input-wrapper">
+                <input type="password" id="admin-password" placeholder="Password di accesso...">
+                <button id="unlock-btn" class="unlock-btn">SBLOCCA</button>
+            </div>
+            <p id="password-error" class="password-error" style="display: none;">CODICE ERRATO. RIPROVA.</p>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html"><img src="img/logo.png" width="180" height="50"></a>
+        <a href="serie.html">Serie TV</a>
+        <a href="film.html">Film</a>
+        <a href="anime.html">Anime</a>
+        <a href="band.html">Band</a>
+        <a href="preferiti.html">Preferiti</a>
+        <a href="upload.html">Aggiungi</a>
+    </div>
+
+    <header class="header-film">
+        <h1>Aggiunta opere</h1>
+    </header>
+
+    <div class="form-container premium-form">
+        <div class="type-selector-wrapper">
+            <label for="category-select">SELEZIONA CATEGORIA</label>
+            <select id="category-select" class="premium-select">
+                <option value="movies">FILM</option>
+                <option value="tv_series">SERIE TV</option>
+                <option value="anime">ANIME</option>
+                <option value="bands">BAND MUSICALE</option>
+            </select>
+        </div>
+
+        <form id="upload-form" class="upload-form">
+            <div class="form-group">
+                <label for="titolo" id="label-titolo">TITOLO DELL'OPERA</label>
+                <input type="text" id="titolo" name="titolo" required placeholder="Inserisci il titolo...">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group" id="paese-group">
+                    <label for="paese" id="label-paese">PAESE D'ORIGINE</label>
+                    <input type="text" id="paese" name="paese" required placeholder="Es. US, UK, JP, IT">
+                </div>
+                <div class="form-group">
+                    <label for="genere">GENERE (Separati da virgola)</label>
+                    <input type="text" id="genere" name="genere" required placeholder="Azione, Drama, Rock...">
+                </div>
+            </div>
+
+            <div class="movie-fields">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="anno">ANNO DI USCITA</label>
+                        <input type="number" id="anno" name="anno" placeholder="1999">
+                    </div>
+                    <div class="form-group">
+                        <label for="durata_min">DURATA (MINUTI)</label>
+                        <input type="number" id="durata_min" name="durata_min" placeholder="120">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="regia">REGIA</label>
+                    <input type="text" id="regia" name="regia" placeholder="Nome del regista">
+                </div>
+                <div class="form-group">
+                    <label for="incasso">INCASSO MONDIALE (EUR)</label>
+                    <input type="number" id="incasso" name="incasso" placeholder="Incasso totale...">
+                </div>
+                <div class="form-group">
+                    <label>È UN'OPERA DI ANIMAZIONE?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="is_anime" value="true"> SI</label>
+                        <label><input type="radio" name="is_anime" value="false" checked> NO</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="series-anime-fields" style="display: none;">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="anni_attivi">PERIODO ATTIVITÀ</label>
+                        <input type="text" id="anni_attivi" name="anni_attivi" placeholder="Es. 2010–2015">
+                    </div>
+                    <div class="form-group">
+                        <label for="stagioni">NUMERO STAGIONI</label>
+                        <input type="number" id="stagioni" name="stagioni" placeholder="Es. 5">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="network">NETWORK / STREAMING (Separati da virgola)</label>
+                    <input type="text" id="network" name="network" placeholder="Netflix, HBO, Disney+...">
+                </div>
+                <div class="form-group anime-only" style="display: none;">
+                    <label for="episodio_visto">EPISODIO PIÙ VISTO</label>
+                    <input type="text" id="episodio_visto" name="episodio_visto" placeholder="Titolo episodio (S01E01)">
+                </div>
+            </div>
+
+            <div class="band-fields" style="display: none;">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="periodo_attivita">PERIODO ATTIVITÀ</label>
+                        <input type="text" id="periodo_attivita" name="periodo_attivita"
+                            placeholder="Es. 1970–1991 o 2000–presente">
+                    </div>
+                    <div class="form-group">
+                        <label for="album">ALBUM PUBBLICATI</label>
+                        <input type="number" id="album" name="album" placeholder="Es. 12">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="etichette">ETICHETTE DISCOGRAFICHE (Separati da virgola)</label>
+                    <input type="text" id="etichette" name="etichette" placeholder="EMI, Sony Music...">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cast_members" id="label-cast">CAST / COMPONENTI (Separati da virgola)</label>
+                <input type="text" id="cast_members" name="cast_members" placeholder="Nomi...">
+            </div>
+
+            <div class="form-group">
+                <label for="awards" id="label-awards">PREMI VINTI (Separati da virgola o testo)</label>
+                <input type="text" id="awards" name="awards" placeholder="Oscar, Grammy, Emmy...">
+            </div>
+
+            <div class="form-group">
+                <label for="curiosita">CURIOSITÀ</label>
+                <textarea id="curiosita" name="curiosita" rows="4" placeholder="Aneddoti interessanti..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="fonte">FONTE INFORMAZIONI</label>
+                <input type="text" id="fonte" name="fonte" placeholder="Wikipedia, IMDb, Sito ufficiale...">
+            </div>
+
+            <button type="submit" class="upload-btn">SINCRONIZZA DATABASE</button>
+        </form>
+        <div id="feedback-message" class="feedback"></div>
+    </div>
+
+    <footer>
+        <p>Tutti i diritti riservati Paolo Baldini 2026</p>
+    </footer>
+</body>
+
+</html>

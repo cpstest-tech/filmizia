@@ -1,0 +1,167 @@
+╔════════════════════════════════════════════════════════════╗
+║         🎬 ENTERTAINMENT API SERVER - QUICK START 🎵       ║
+╚════════════════════════════════════════════════════════════╝
+
+📦 INSTALLAZIONE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Installa Node.js dal sito ufficiale (se non lo hai già):
+   https://nodejs.org/
+
+2. Apri un terminale nella cartella del progetto ed esegui:
+   
+   npm install
+
+   Questo installerà tutte le dipendenze necessarie.
+
+
+🚀 AVVIO DEL SERVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Esegui uno dei seguenti comandi:
+
+   npm start              # Avvia il server
+   npm run dev            # Avvia con auto-reload (modalità sviluppo)
+
+Il server sarà disponibile su: http://localhost:3000
+
+
+📖 UTILIZZO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BROWSER:
+   
+   Apri il browser e vai a:
+   
+   - http://localhost:3000/           → Documentazione API
+   - http://localhost:3000/movies     → Lista film
+   - http://localhost:3000/tv_series  → Lista serie TV
+   - http://localhost:3000/bands      → Lista band
+   - http://localhost:3000/stats      → Statistiche
+
+   Per l'interfaccia demo, apri il file:
+   demo.html
+
+2. CURL (da terminale):
+   
+   # Tutti i film
+   curl http://localhost:3000/movies
+
+   # Film del 1972
+   curl http://localhost:3000/movies?anno=1972
+
+   # Serie HBO
+   curl http://localhost:3000/tv_series?network_streaming_like=HBO
+
+   # Band britanniche
+   curl http://localhost:3000/bands?paese_origine=UK
+
+   # Ricerca globale
+   curl http://localhost:3000/search?q=godfather
+
+3. JAVASCRIPT:
+   
+   fetch('http://localhost:3000/movies')
+     .then(r => r.json())
+     .then(data => console.log(data));
+
+
+📊 ENDPOINT PRINCIPALI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GET  /movies                    → Tutti i film
+GET  /movies/:id                → Film specifico
+GET  /tv_series                 → Tutte le serie TV
+GET  /tv_series/:id             → Serie specifica
+GET  /bands                     → Tutte le band
+GET  /bands/:id                 → Band specifica
+GET  /stats                     → Statistiche generali
+GET  /stats/movies              → Statistiche film
+GET  /stats/tv_series           → Statistiche serie TV
+GET  /stats/bands               → Statistiche band
+GET  /search?q=termine          → Ricerca globale
+
+
+🔍 ESEMPI DI QUERY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+/movies?titolo_like=god                      → Cerca "god" nel titolo
+/movies?anno=1972                            → Film del 1972
+/movies?genere_like=drama                    → Film drammatici
+/movies?is_anime=true                        → Solo anime
+/movies?_sort=incasso_mondiale_eur&_order=desc → Top incassi
+
+/tv_series?network_streaming_like=HBO        → Serie HBO
+/tv_series?stagioni_gte=5                    → 5+ stagioni
+/tv_series?_sort=stagioni&_order=desc        → Ordinate per stagioni
+
+/bands?paese_origine=UK                      → Band UK
+/bands?genere_like=rock                      → Band rock
+/bands?_sort=numero_album_pubblicati&_order=desc → Più album
+
+
+📁 FILE DEL PROGETTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+server.js           → Server Node.js principale
+db.json             → Database JSON con tutti i dati
+package.json        → Configurazione del progetto
+README.md           → Documentazione completa
+demo.html           → Interfaccia web di test
+examples.js         → Esempi di utilizzo
+QUICKSTART.txt      → Questa guida
+
+
+🛑 FERMARE IL SERVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Premi CTRL+C nel terminale dove sta girando il server.
+
+
+💡 SUGGERIMENTI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Consulta README.md per la documentazione completa
+- Usa demo.html per testare l'API dal browser
+- Vedi examples.js per più esempi di codice
+- I dati sono persistiti in db.json
+- Puoi modificare i dati con POST/PUT/PATCH/DELETE
+
+
+📚 RISORSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Documentazione JSON Server:
+https://github.com/typicode/json-server
+
+
+🆘 PROBLEMI COMUNI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: "npm: command not found"
+A: Installa Node.js da https://nodejs.org/
+
+Q: "Port 3000 already in use"
+A: Cambia porta con: PORT=4000 npm start
+
+Q: "Cannot GET /"
+A: Assicurati che il server sia avviato
+
+Q: Le modifiche non si salvano
+A: Le modifiche sono salvate in db.json
+
+
+✅ VERIFICA INSTALLAZIONE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. npm install    → Installa dipendenze
+2. npm start      → Avvia il server
+3. Apri browser → http://localhost:3000
+4. Se vedi la documentazione API, sei pronto! 🎉
+
+
+═══════════════════════════════════════════════════════════════
+
+         Buon divertimento con l'Entertainment API! 🚀
+         
+═══════════════════════════════════════════════════════════════

@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film</title>
+    <title>I Miei Preferiti</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/favorites.js"></script>
-    <script src="js/film.js"></script>
+    <script src="js/preferiti.js"></script>
 </head>
 
 <body>
@@ -17,48 +17,54 @@
         <a href="film.html">Film</a>
         <a href="anime.html">Anime</a>
         <a href="band.html">Band</a>
-        <a href="preferiti.html">Preferiti</a>
+        <a href="preferiti.html" style="color: #ff5900;">Preferiti</a>
         <a href="upload.html">Aggiungi</a>
     </div>
-    <header class="header-film">
-        <h1>Film</h1>
-        <p>Esplora i migliori film del momento.</p>
+
+    <header style="background-image: url('img/hero_film.png'); filter: grayscale(50%);">
+        <h1>I Tuoi Preferiti</h1>
+        <p>La tua collezione personale di film, serie, anime e band.</p>
     </header>
+
     <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Cerca film...">
-        <button onclick="cercaFilm()">Cerca</button>
+        <input type="text" id="search-input" placeholder="Cerca nei preferiti...">
+        <button onclick="cercaPreferiti()">Cerca</button>
     </div>
+
     <div class="filter-container">
-        <span>Film di animazione:</span>
+        <span>Filtra per:</span>
         <label class="radio-label">
-            <input type="radio" name="is_anime" value="all" checked onchange="renderFilteredFilms()">
-            Tutte
+            <input type="radio" name="fav_type" value="all" checked onchange="renderFavorites()"> Tutti
         </label>
         <label class="radio-label">
-            <input type="radio" name="is_anime" value="yes" onchange="renderFilteredFilms()">
-            Sì
+            <input type="radio" name="fav_type" value="film" onchange="renderFavorites()"> Film
         </label>
         <label class="radio-label">
-            <input type="radio" name="is_anime" value="no" onchange="renderFilteredFilms()">
-            No
+            <input type="radio" name="fav_type" value="serie" onchange="renderFavorites()"> Serie
+        </label>
+        <label class="radio-label">
+            <input type="radio" name="fav_type" value="anime" onchange="renderFavorites()"> Anime
+        </label>
+        <label class="radio-label">
+            <input type="radio" name="fav_type" value="band" onchange="renderFavorites()"> Band
         </label>
     </div>
-    <div class="contenitori">
+
+    <div class="contenitori" id="favorites-container">
+        <!-- Cards will be injected here -->
     </div>
+
     <div id="dettagli-modal" class="modal-overlay" style="display: none;"
         onclick="document.getElementById('dettagli-modal').style.display = 'none';">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="close-btn"
                 onclick="document.getElementById('dettagli-modal').style.display = 'none';">×</button>
-            <h2>Lorem Ipsum</h2>
+            <h2>Dettagli</h2>
             <div class="modal-info">
-                <p><strong>Anno:</strong> 6767</p>
-                <p><strong>Durata:</strong> 67 min</p>
-                <p><strong>Genere:</strong> Azione, Avventura</p>
-                <p><strong>Regista:</strong> loris di silvestro</p>
             </div>
         </div>
     </div>
+
     <footer>
         <p>Tutti i diritti riservati Paolo Baldini 2026</p>
     </footer>

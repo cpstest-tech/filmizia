@@ -1,106 +1,90 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let currentSlideIndex = 0;
-    const slides = document.querySelectorAll('.carousel-slide');
-    const dots = document.querySelectorAll('.dot');
 
-    function showSlide(index) {
-        if (slides.length === 0) return;
+/**
+ * Gestione Pagina Preferiti
+ */
 
-        if (index >= slides.length) currentSlideIndex = 0;
-        if (index < 0) currentSlideIndex = slides.length - 1;
+let allFavorites = [];
 
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
+// Carica e renderizza i preferiti all'avvio
+window.onload = () => {
+    loadFavoritesPage();
 
-        slides[currentSlideIndex].classList.add('active');
-        if (dots[currentSlideIndex]) dots[currentSlideIndex].classList.add('active');
-    }
-
-    window.changeSlide = function (step) {
-        currentSlideIndex += step;
-        showSlide(currentSlideIndex);
-    }
-
-    window.currentSlide = function (index) {
-        currentSlideIndex = index;
-        showSlide(currentSlideIndex);
-    }
-
-    if (slides.length > 0) {
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000);
-    }
-
+    // Setup ricerca estemporanea
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
         searchInput.addEventListener('keyup', (event) => {
             if (event.key === 'Enter') {
-                cercaGlobale();
+                cercaPreferiti();
+            } else {
+                // Ricerca live
+                cercaPreferiti();
             }
         });
     }
-});
+};
 
-async function cercaGlobale() {
-    const query = document.getElementById('search-input').value.trim().toLowerCase();
-    const container = document.querySelector('.contenitori');
-    const carousel = document.querySelector('.carousel-container');
+function loadFavoritesPage() {
+    allFavorites = getFavorites(); // da favorites.js
+    renderFavorites();
+}
 
-    if (!query) {
-        container.innerHTML = '';
-        if (carousel) carousel.style.display = 'block';
+function cercaPreferiti() {
+    renderFavorites();
+}
+
+function renderFavorites() {
+    const container = document.getElementById('favorites-container');
+    const filterType = document.querySelector('input[name="fav_type"]:checked').value;
+    const searchQuery = document.getElementById('search-input').value.toLowerCase().trim();
+
+    container.innerHTML = '';
+
+    if (allFavorites.length === 0) {
+        container.innerHTML = '<p class="favorites-empty">Non hai ancora aggiunto nulla ai preferiti.</p>';
         return;
     }
 
-    if (carousel) carousel.style.display = 'none';
+    // Filtra per tipo e ricerca
+    const filtered = allFavorites.filter(fav => {
+        const item = fav.data;
+        const matchesType = filterType === 'all' || fav.type === filterType;
 
-    try {
-        const risposta = await fetch(`http://localhost:3000/search?q=${encodeURIComponent(query)}`);
-        if (!risposta.ok) throw new Error('Errore nella ricerca');
+        let title = (item.titolo || item.band || '').toLowerCase();
+        const matchesSearch = !searchQuery || title.includes(searchQuery);
 
-        const data = await risposta.json();
-        container.innerHTML = '';
+        return matchesType && matchesSearch;
+    });
 
-        let resultsFound = false;
-
-        const processResults = (items, type) => {
-            if (items && Array.isArray(items) && items.length > 0) {
-                resultsFound = true;
-                items.forEach(item => {
-                    const card = creaCardGlobale(item, type);
-                    container.appendChild(card);
-                });
-            }
-        };
-
-        if (data.results) {
-            processResults(data.results.movies, 'film');
-            processResults(data.results.tv_series, 'serie');
-            processResults(data.results.anime, 'anime');
-            processResults(data.results.bands, 'band');
-        }
-
-        if (!resultsFound) {
-            container.innerHTML = '<p style="color: white; text-align: center; width: 100%;">Nessun risultato trovato che corrisponda al titolo/nome cercato.</p>';
-        }
-
-    } catch (error) {
-        console.error(error);
-        container.innerHTML = '<p style="color: red; text-align: center; width: 100%;">Errore durante la ricerca.</p>';
+    if (filtered.length === 0) {
+        container.innerHTML = '<p class="favorites-empty">Nessun preferito trovato con questi criteri.</p>';
+        return;
     }
+
+    filtered.forEach(fav => {
+        const card = createCard(fav.data, fav.type);
+        container.appendChild(card);
+    });
 }
 
-function creaCardGlobale(item, type) {
+function createCard(item, type) {
     const card = document.createElement('div');
     card.className = 'item';
 
-    const img = document.createElement('img');
-    img.src = 'img/hero_film.png';
-    if (type === 'anime') img.src = 'img/hero_anime.png';
-    if (type === 'serie') img.src = 'img/hero_serie.png';
-    if (type === 'band') img.src = 'img/hero_band.png';
+    // Etichetta tipo
+    const typeLabel = document.createElement('div');
+    typeLabel.className = 'card-type-label';
+    typeLabel.textContent = type.toUpperCase();
+    card.appendChild(typeLabel);
 
+    const img = document.createElement('img');
+    // Img default in base al tipo
+    if (type === 'film') img.src = 'img/hero_film.png';
+    else if (type === 'serie') img.src = 'img/hero_serie.png';
+    else if (type === 'anime') img.src = 'img/hero_anime.png';
+    else if (type === 'band') img.src = 'img/hero_band.png';
+    else img.src = 'img/hero_film.png';
+
+    // Usa nome/titolo appropriato
     const titleText = item.titolo || item.band || 'Titolo Sconosciuto';
     img.alt = titleText;
     card.appendChild(img);
@@ -123,9 +107,10 @@ function creaCardGlobale(item, type) {
     const btn = document.createElement('button');
     btn.className = 'dettagli-btn';
     btn.textContent = 'Dettagli';
-    btn.onclick = () => apriDettagliGlobale(item, type);
+    btn.onclick = () => showDetails(item, type);
     overlay.appendChild(btn);
 
+    // Bottone preferito (da favorites.js)
     const favBtn = createFavoriteButton(item, type);
     card.appendChild(favBtn);
 
@@ -134,7 +119,7 @@ function creaCardGlobale(item, type) {
     return card;
 }
 
-function apriDettagliGlobale(item, type) {
+function showDetails(item, type) {
     const modal = document.getElementById('dettagli-modal');
     const modalTitle = modal.querySelector('.modal-content h2');
     const modalInfo = modal.querySelector('.modal-info');
