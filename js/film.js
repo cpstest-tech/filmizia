@@ -134,3 +134,26 @@ window.onload = () => {
     }
 };
 
+async function sorprendimiFilm() {
+    try {
+        const risposta = await fetch('http://localhost:3000/movies');
+        if (!risposta.ok) throw new Error('Errore nel caricamento dei film');
+
+        const films = await risposta.json();
+
+        if (films.length === 0) {
+            alert('Nessun film trovato!');
+            return;
+        }
+
+        const randomIndex = Math.floor(Math.random() * films.length);
+        const randomFilm = films[randomIndex];
+
+        apriDettagli(randomFilm);
+
+    } catch (error) {
+        console.error("Errore sorprendimiFilm:", error);
+        alert('Impossibile caricare un film a caso.');
+    }
+}
+

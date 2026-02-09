@@ -119,3 +119,26 @@ window.onload = () => {
     }
 };
 
+async function sorprendimiBand() {
+    try {
+        const risposta = await fetch('http://localhost:3000/bands');
+        if (!risposta.ok) throw new Error('Errore nel caricamento delle band');
+
+        const bands = await risposta.json();
+
+        if (bands.length === 0) {
+            alert('Nessuna band trovata!');
+            return;
+        }
+
+        const randomIndex = Math.floor(Math.random() * bands.length);
+        const randomBand = bands[randomIndex];
+
+        apriDettagli(randomBand);
+
+    } catch (error) {
+        console.error("Errore sorprendimiBand:", error);
+        alert('Impossibile caricare una band a caso.');
+    }
+}
+

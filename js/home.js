@@ -138,7 +138,15 @@ function apriDettagliGlobale(item, type) {
     const modal = document.getElementById('dettagli-modal');
     const modalTitle = modal.querySelector('.modal-content h2');
     const modalInfo = modal.querySelector('.modal-info');
-    const titleText = item.titolo || item.band || 'Dettagli';
+
+    let displayType = '';
+    if (type === 'film') displayType = 'Film';
+    else if (type === 'serie') displayType = 'Serie TV';
+    else if (type === 'anime') displayType = 'Anime';
+    else if (type === 'band') displayType = 'Band';
+
+    const baseTitle = item.titolo || item.band || 'Dettagli';
+    const titleText = displayType ? `${baseTitle} - ${displayType}` : baseTitle;
 
     if (modalTitle) modalTitle.textContent = titleText;
 
@@ -147,9 +155,13 @@ function apriDettagliGlobale(item, type) {
         const safeJoin = (val) => Array.isArray(val) ? val.join(', ') : val;
 
         if (type === 'film') {
+            htmlContent += `<p><strong>Paese:</strong> ${item.paese || 'N/D'}</p>`;
             htmlContent += `<p><strong>Anno:</strong> ${item.anno}</p>`;
             htmlContent += `<p><strong>Durata:</strong> ${item.durata_min} min</p>`;
             htmlContent += `<p><strong>Regia:</strong> ${item.regia}</p>`;
+            if (item.incasso_mondiale_eur) htmlContent += `<p><strong>Incasso Mondiale:</strong> ${item.incasso_mondiale_eur}</p>`;
+            if (item.premi_vinti) htmlContent += `<p><strong>Premi vinti:</strong> ${safeJoin(item.premi_vinti)}</p>`;
+            if (item.fonte) htmlContent += `<p><strong>Fonte:</strong> ${item.fonte}</p>`;
         } else if (type === 'serie') {
             htmlContent += `<p><strong>Anni:</strong> ${item.anni}</p>`;
             htmlContent += `<p><strong>Stagioni:</strong> ${item.stagioni}</p>`;
@@ -172,4 +184,42 @@ function apriDettagliGlobale(item, type) {
     }
 
     modal.style.display = 'flex';
+}
+
+async function sorprendimi() {
+    const endpoints = [
+        { url: 'movies', type: 'film' },
+        { url: 'tv_series', type: 'serie' },
+        { url: 'anime', type: 'anime' },
+        { url: 'bands', type: 'band' }
+    ];
+
+    const randomCategory = endpoints[Math.floor(Math.random() * endpoints.length)];
+
+    try {
+        const risposta = await fetch(`http://localhost:3000/${randomCategory.url}`);
+        if (!risposta.ok) throw new Error(`Errore nel caricamento di ${randomCategory.url}`);
+
+        const items = await risposta.json();
+
+        if (items.length === 0) {
+            alert('Nessun risultato trovato!');
+            return;
+        }
+
+        const randomIndex = Math.floor(Math.random() * items.length);
+        const randomItem = items[randomIndex];
+
+        apriDettagliGlobale(randomItem, randomCategory.type);
+
+    } catch (error) {
+        console.error("Errore sorprendimi:", error);
+        alert('Impossibile caricare un elemento a caso.');
+    }
+}
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    navbar.classList.toggle('active');
+    hamburger.classList.toggle('active');
 }

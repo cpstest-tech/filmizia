@@ -116,3 +116,26 @@ window.onload = () => {
     }
 };
 
+async function sorprendimiAnime() {
+    try {
+        const risposta = await fetch('http://localhost:3000/anime');
+        if (!risposta.ok) throw new Error('Errore nel caricamento degli anime');
+
+        const anime = await risposta.json();
+
+        if (anime.length === 0) {
+            alert('Nessun anime trovato!');
+            return;
+        }
+
+        const randomIndex = Math.floor(Math.random() * anime.length);
+        const randomAnime = anime[randomIndex];
+
+        apriDettagli(randomAnime);
+
+    } catch (error) {
+        console.error("Errore sorprendimiAnime:", error);
+        alert('Impossibile caricare un anime a caso.');
+    }
+}
+

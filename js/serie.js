@@ -115,3 +115,26 @@ window.onload = () => {
     }
 };
 
+async function sorprendimiSerie() {
+    try {
+        const risposta = await fetch('http://localhost:3000/tv_series');
+        if (!risposta.ok) throw new Error('Errore nel caricamento delle serie TV');
+
+        const serie = await risposta.json();
+
+        if (serie.length === 0) {
+            alert('Nessuna serie trovata!');
+            return;
+        }
+
+        const randomIndex = Math.floor(Math.random() * serie.length);
+        const randomSerie = serie[randomIndex];
+
+        apriDettagli(randomSerie);
+
+    } catch (error) {
+        console.error("Errore sorprendimiSerie:", error);
+        alert('Impossibile caricare una serie a caso.');
+    }
+}
+

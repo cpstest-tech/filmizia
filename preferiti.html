@@ -11,8 +11,13 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <a href="index.html"><img src="img/logo.png" width="180" height="50"></a>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <a href="serie.html">Serie TV</a>
         <a href="film.html">Film</a>
         <a href="anime.html">Anime</a>
@@ -68,6 +73,14 @@
     <footer>
         <p>Tutti i diritti riservati Paolo Baldini 2026</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            const hamburger = document.getElementById('hamburger');
+            navbar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
